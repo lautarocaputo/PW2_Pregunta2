@@ -1,24 +1,11 @@
 <?php
-include_once('Configuration.php');
-$configuration = new Configuration();
-$database = $configuration->getDatabase();
+session_start();
+include_once ("config/Configuracion.php");
 
-$page = $_GET["page"];
-include_once('view/header.php');
-switch ($page){
-    case 'jugar':
-        $tourController = $configuration->getPlayController();
-        $tourController->cargarMenu();
-        break;
-    case "ranking":
-        $rankingController = $configuration->getrankingController();
-        $rankingController->mostrarRanking();
-        break;
-    default:
-        $home = $configuration->HomeController();
-        $home->mostrarHome();
-        break;
-}
-include_once('view/footer.php');
+$configuracion = new Configuracion();
+$router = $configuracion->getRouter();
 
+$controller = $_GET['controller'] ?? "home";
+$method = $_GET['method'] ?? 'listar';
 
+$router->route($controller, $method);

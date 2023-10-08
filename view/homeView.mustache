@@ -1,0 +1,20 @@
+<div class="w3-container w3-center">
+    <form method="get" action="/pokedex">
+        <input name="search" type="text">
+        <button type="submit">Buscar</button>
+    </form>
+</div>
+
+<div class="pokemon-list">
+    {{#pokemon}}
+        <div class="pokemon-card">
+            <img class="pokemon-image" src="{{image}}">
+            <p>Tipo: <img src="{{type}}" width="20px"></p>
+            <p>Número: {{number}}</p>
+            <p>Nombre: {{name}}</p>
+            <p><a href="/pokedex/borrar/id={{id}}">[Borrar]</a></p>
+            <p><a href="/pokedex/editar/id={{id}}">[Editar]</a></p>
+        </div>
+    {{/pokemon}}
+</div>
+
