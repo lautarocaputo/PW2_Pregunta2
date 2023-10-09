@@ -17,7 +17,7 @@ include_once ('model/HomeModel.php');
 
 class Configuration {
 
-    private $configFile = 'config/config.ini';
+    private $configFile = 'config/configuration.ini';
     public function __construct() {
     }
 

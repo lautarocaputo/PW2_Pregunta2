@@ -11,7 +11,7 @@ class LoginModel
 
     public function getUser($username, $password)
     {
-        $query = "SELECT * FROM usuario WHERE username = '$username' AND password = '$password'";
+        $query = "SELECT * FROM usuario WHERE NombreUsuario = '$username' AND Contrasenia = '$password'";
         return $this->database->query($query);
     }
 
