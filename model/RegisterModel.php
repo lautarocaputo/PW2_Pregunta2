@@ -23,7 +23,7 @@ class RegisterModel
     public function register($name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username, $foto_perfil)
     {
         $query = "INSERT INTO usuarios(nombre_completo, ano_nacimiento, sexo, pais, ciudad, correo_electronico, contrasena, nombre_usuario, foto_perfil, activo) 
-VALUES('$name', '$fecha_nacimiento', '$sexo', '$pais', '$ciudad', '$email', '$password', '$username', '$foto_perfil', 'true')";
+VALUES('$name', '$fecha_nacimiento', '$sexo', '$pais', '$ciudad', '$email', '$password', '$username', '$foto_perfil', '1')";
         return $this->database->insert($query);
     }
 }

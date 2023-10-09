@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
-      <change afterPath="$PROJECT_DIR$/controller/LogOutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/LogOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LogOutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log-2023-10-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-09.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RegisterModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/RegisterModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
