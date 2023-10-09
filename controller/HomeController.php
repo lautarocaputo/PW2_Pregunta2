@@ -11,7 +11,6 @@ class HomeController
         $this->renderer = $renderer;
     }
 
-
     public function list()
     {
         $idUser = $_SESSION['actualUser'];

@@ -10,9 +10,9 @@ $router = $configuration->getRouter();
 $module = $_GET['module'] ?? 'home';
 $method = $_GET['action'] ?? 'list';
 
-if ($module !== 'login' && $module !== 'register') {
-    $validarUsuarioLogeado = new ValidarUsuarioLogeado();
-    $validarUsuarioLogeado->validarUsuarioLogeado();
-}
+//if ($module !== 'login' && $module !== 'register') {
+//    $validarUsuarioLogeado = new ValidarUsuarioLogeado();
+//    $validarUsuarioLogeado->validarUsuarioLogeado();
+//}
 
 $router->route($module, $method);

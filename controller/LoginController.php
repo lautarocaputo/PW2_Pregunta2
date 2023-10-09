@@ -13,13 +13,15 @@ class LoginController
 
     public function login()
     {
-        // Lógica para mostrar el formulario de inicio de sesión
         $this->renderer->render('login');
+        if (isset($_GET['token'])) {
+            $token = $_GET['token'];
+            $this->loginModel->setUserVerified($token);
+        }
     }
 
     public function ingresarlogin()
     {
-        // Lógica para procesar el inicio de sesión
 
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -28,16 +30,16 @@ class LoginController
         $idUsuario = $usuario[0]['idUsuario'] ?? "";
         $usuarioVerificado = $usuario[0]['esta_verificado'] ?? "";
 
+
         if (!empty($usuario) && $usuarioVerificado == 'true') {
             $_SESSION['actualUser'] = $idUsuario;
-            if ($usuario[0]['rol'] == 'editor') {
-                $_SESSION['esEditor'] = true;
-            }
             header('location: /');
             exit();
         } else {
             $error['errorDatos'] = "El username o contraseña son incorrectos";
             $this->renderer->render('login', $error);
         }
+
+
     }
 }

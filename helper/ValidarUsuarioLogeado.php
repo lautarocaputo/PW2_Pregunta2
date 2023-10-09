@@ -1,11 +1,11 @@
 <?php
 
-class ValidarUsuarioLogeado{
+class ValidarUsuarioLogeado
+{
 
     public function validarUsuarioLogeado() {
         if (!isset($_SESSION['actualUser'])) {
-            header('Location: /login');
-            echo "holis";
+            header('Location: /login/login');
             exit();
         }
     }

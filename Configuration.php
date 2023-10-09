@@ -1,30 +1,43 @@
 <?php
-include_once('helper/Database.php');
-include_once('helper/Render.php');
-include_once('helper/MustacheRender.php');
-include_once("helper/Router.php");
-include_once("helper/Logger.php");
-include_once('helper/Redirect.php');
+include_once('helper/MySqlDatabase.php');
+include_once("helper/MustacheRender.php");
+include_once('helper/Router.php');
+include_once('helper/Logger.php');
 
+include_once('model/HomeModel.php');
+include_once('model/LoginModel.php');
+
+include_once('controller/HomeController.php');
+include_once('controller/LoginController.php');
 include_once('third-party/mustache/src/Mustache/Autoloader.php');
 
-include_once ('controller/LoginController.php');
-include_once ('controller/HomeController.php');
 
-include_once ('model/LoginModel.php');
-include_once ('model/HomeModel.php');
-
-
-class Configuration {
-
+class Configuration
+{
     private $configFile = 'config/configuration.ini';
-    public function __construct() {
+
+    public function __construct()
+    {
+    }
+
+    public function getHomeController()
+    {
+        return new HomeController(
+            new HomeModel($this->getDatabase()),
+            $this->getRenderer()
+        );
     }
 
     private function getArrayConfig()
     {
         return parse_ini_file($this->configFile);
     }
+
+    private function getRenderer()
+    {
+        return new MustacheRender('view/partial');
+    }
+
     public function getDatabase()
     {
         $config = $this->getArrayConfig();
@@ -34,9 +47,13 @@ class Configuration {
             $config['password'],
             $config['database']);
     }
-    private function getRenderer()
+
+    public function getRouter()
     {
-        return new MustacheRender('view/partial');
+        return new Router(
+            $this,
+            "getHomeController",
+            "list");
     }
 
     public function getLoginController()
@@ -47,7 +64,4 @@ class Configuration {
         );
     }
 
-    public function getRouter() {
-        return new Router($this,"getHomeController","list");
-    }
 }
