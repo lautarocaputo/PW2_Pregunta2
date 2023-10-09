@@ -39,29 +39,24 @@ class Configuration {
 
     public function getLoginController()
     {
-        return new LoginController(
-            new LoginModel($this->getDatabase()),
-            $this->getRenderer()
-        );
+        $model = new LoginModel($this->getDatabase());
+        return new LoginController($model, $this->getRenderer());
     }
 
     public function getRegisterController()
     {
-        return new RegisterController(
-            new RegisterModel($this->getDatabase()),
-            $this->getRenderer()
-        );
+        $model = new RegisterModel($this->getDatabase());
+        return new RegisterController($model, $this->getRenderer());
+
     }
 
     public function getHomeController()
     {
-        return new HomeController(
-            new HomeModel($this->getDatabase()),
-            $this->getRenderer()
-        );
+        $model = new HomeModel($this->getDatabase());
+        return new HomeController($model, $this->getRenderer());
     }
 
     public function getRouter() {
-        return new Router($this,"getHomeController","login");
+        return new Router($this,"getHomeController","list");
     }
 }

@@ -4,7 +4,7 @@ class ValidarUsuarioLogeado{
 
     public function validarUsuarioLogeado() {
         if (!isset($_SESSION['actualUser'])) {
-            header('Location: /login');
+            header('Location: /login/login');
             exit();
         }
     }
