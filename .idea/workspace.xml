@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Ahora si andando el iniciar sesion y home">
-      <change afterPath="$PROJECT_DIR$/model/RegisterModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/register_view.mustache" afterDir="false" />
+    <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
+      <change afterPath="$PROJECT_DIR$/controller/LogOutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log-2023-10-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-09.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/LoginModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/LoginModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,24 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "shushu",
-    "last_opened_file_path": "C:/Users/Shushu/Desktop/PrograWeb2/PW2_Pregunta2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Settings.Markdown",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;shushu&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Shushu/Desktop/PrograWeb2/PW2_Pregunta2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\scripts" />
@@ -91,41 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1696798408159</updated>
       <workItem from="1696798412488" duration="13188000" />
-      <workItem from="1696821144504" duration="17374000" />
+      <workItem from="1696821144504" duration="2992000" />
     </task>
-    <task id="LOCAL-00001" summary="Iniciar Sesion Andando">
-      <option name="closed" value="true" />
-      <created>1696824177477</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1696824177477</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Iniciar Sesion entra, falla home">
-      <option name="closed" value="true" />
-      <created>1696860743025</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1696860743025</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Ahora si andando el iniciar sesion y home">
-      <option name="closed" value="true" />
-      <created>1696863713814</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1696863713814</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Ahora si andando el iniciar sesion y home">
-      <option name="closed" value="true" />
-      <created>1696863735270</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1696863735270</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,9 +108,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Iniciar Sesion Andando" />
-    <MESSAGE value="Iniciar Sesion entra, falla home" />
-    <MESSAGE value="Ahora si andando el iniciar sesion y home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ahora si andando el iniciar sesion y home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciar Sesion Andando" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

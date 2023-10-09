@@ -8,6 +8,7 @@ include_once('third-party/mustache/src/Mustache/Autoloader.php');
 
 include_once ('controller/HomeController.php');
 include_once ('controller/LoginController.php');
+include_once ('controller/LogOutController.php');
 include_once ('controller/RegisterController.php');
 
 include_once ('model/HomeModel.php');
@@ -43,6 +44,11 @@ class Configuration {
     {
         $model = new LoginModel($this->getDatabase());
         return new LoginController($model, $this->getRenderer());
+    }
+
+    public function getLogOutController()
+    {
+        return new LogOutController();
     }
 
     public function getRegisterController()
