@@ -1,22 +1,15 @@
 {{> header}}
-<!-- The Band Section -->
 <html class="home">
 <body>
-<div>
-    <h2 class="home-title">KnowItAll</h2>
+<div class="container">
+    <h2 class="home-title d-flex justify-content-center mt-2">Pregunta2</h2>
     <div class="general-home">
         <div class="buttons-home-cont">
             <br>
             {{#user}}
-                <p>Hola  <span style="font-weight: bold"> {{nombreCompleto}}</span>! Tu puntaje total es de <span style="font-weight: bold">{{puntaje}}</span></p>
+                <p>Hola, bienvenido  <span style="font-weight: bold"> {{nombre_completo}}</span></p>
             {{/user}}
-            <a href="/partida/empezarPartida" class="button-empezar">Jugar Partida</a>
-            <br>
-            <a href="/pregunta/crear" class="button-crear">Crear Pregunta</a>
         </div>
-
-
-    <!-- End Page Content -->
 </div>
 
 </body>
