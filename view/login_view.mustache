@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../public/css/login.css">
+</head>
+<body>
+<div class="login-page">
+    <div class="login-side">
+        <form action="/login/ingresarlogin" method="POST" class="login-box">
+            <div class="brand">Iniciar Sesión</div>
+            <div class="line-form">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username">
+
+
+            </div>
+            <div class="line-form">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <h4>
+                {{errorDatos}}
+            </h4>
+            <button type="submit" class="btn-gral">Iniciar sesión</button>
+            <p class="txtReg">¿No tenés una cuenta? <a class="txtReg2" href="/register/register">Registrate</a></p>
+
+        </form>
+    </div>
+    <div class="lateral">
+
+        <h1 class="lateral-title">KnowItAll</h1>
+        <img class="brain" src="../public/images/brain.png" alt="">
+
+    </div>
+</div>
+
+
+</body>
+</html>

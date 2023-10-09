@@ -1,11 +1,18 @@
 <?php
+include_once("helper/ValidarUsuarioLogeado.php");
+include_once('Configuration.php');
+
 session_start();
-include_once ("config/Configuracion.php");
 
-$configuracion = new Configuracion();
-$router = $configuracion->getRouter();
+$configuration = new Configuration();
+$router = $configuration->getRouter();
 
-$controller = $_GET['controller'] ?? "home";
-$method = $_GET['method'] ?? 'listar';
+$module = $_GET['module'] ?? 'home';
+$method = $_GET['action'] ?? 'list';
 
-$router->route($controller, $method);
+if ($module !== 'login' && $module !== 'register') {
+    $validarUsuarioLogeado = new ValidarUsuarioLogeado();
+    $validarUsuarioLogeado->validarUsuarioLogeado();
+}
+
+$router->route($module, $method);

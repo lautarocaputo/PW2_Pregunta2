@@ -1,0 +1,36 @@
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
+[2023-10-09][INFO]Ejecutando Query SELECT * FROM `pokemones` WHERE nombre LIKE '%%' 
+[2023-10-09][INFO]Pokemons: []
