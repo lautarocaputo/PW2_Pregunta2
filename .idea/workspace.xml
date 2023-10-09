@@ -4,234 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/Configuracion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/PokedexController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/RegistroController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/Logger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/MustacheRender.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/Redirect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/Render.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/Router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/log-2023-09-27.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/log-2023-10-09.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/PokedexModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/RegistroModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/agua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/electrico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pikachu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pokeball.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/pokemon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/squirtle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/.php_cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/bin/build_bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Autoloader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Cache/AbstractCache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Cache/FilesystemCache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Cache/NoopCache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Compiler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Context.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Engine.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/InvalidArgumentException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/LogicException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/RuntimeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/SyntaxException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/UnknownFilterException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/UnknownHelperException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Exception/UnknownTemplateException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/HelperCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/LambdaHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/ArrayLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/CascadingLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/FilesystemLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/InlineLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/MutableLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/ProductionFilesystemLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Loader/StringLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Logger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Logger/AbstractLogger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Logger/StreamLogger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Parser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Source.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Source/FilesystemSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/src/Mustache/Tokenizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/AutoloaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Cache/AbstractCacheTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Cache/FilesystemCacheTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/CompilerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/ContextTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/EngineTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Exception/SyntaxExceptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Exception/UnknownFilterExceptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Exception/UnknownHelperExceptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Exception/UnknownTemplateExceptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/ClosureQuirksTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/EngineTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/FiltersTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/HigherOrderSectionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/LambdaHelperTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/MustacheSpecTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/PartialLambdaIndentTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FiveThree/Functional/StrictCallablesTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/CallTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/ExamplesTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/HigherOrderSectionsTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/InheritanceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/MustacheInjectionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/MustacheSpecTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/NestedPartialIndentTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Functional/ObjectSectionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/FunctionalTestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/HelperCollectionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Loader/ArrayLoaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Loader/CascadingLoaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Loader/FilesystemLoaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Loader/InlineLoaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Loader/ProductionFilesystemLoaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Loader/StringLoaderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Logger/AbstractLoggerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Logger/StreamLoggerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/ParserTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/Source/FilesystemSourceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/SpecTestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/TemplateTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/Mustache/Test/TokenizerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/autoloader/Mustache/Bar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/autoloader/Mustache/Foo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/autoloader/NonMustacheClass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/anchored_dot_notation/AnchoredDotNotation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/anchored_dot_notation/anchored_dot_notation.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/anchored_dot_notation/anchored_dot_notation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/anchored_dot_notation/partials/genre.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/blocks/Blocks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/blocks/blocks.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/blocks/blocks.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/blocks/partials/parent.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/child_context/ChildContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/child_context/child_context.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/child_context/child_context.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/comments/Comments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/comments/comments.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/comments/comments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/complex/complex.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/complex/complex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/complex/complex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/delimiters/Delimiters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/delimiters/delimiters.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/delimiters/delimiters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/dot_notation/DotNotation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/dot_notation/dot_notation.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/dot_notation/dot_notation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/double_section/DoubleSection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/double_section/double_section.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/double_section/double_section.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/escaped/Escaped.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/escaped/escaped.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/escaped/escaped.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/filters/Filters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/filters/filters.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/filters/filters.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/grand_parent_context/GrandParentContext.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/grand_parent_context/grand_parent_context.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/grand_parent_context/grand_parent_context.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/i18n/I18n.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/i18n/i18n.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/i18n/i18n.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/implicit_iterator/ImplicitIterator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/implicit_iterator/implicit_iterator.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/implicit_iterator/implicit_iterator.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/inverted_double_section/InvertedDoubleSection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/inverted_double_section/inverted_double_section.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/inverted_double_section/inverted_double_section.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/inverted_section/InvertedSection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/inverted_section/inverted_section.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/inverted_section/inverted_section.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/nested_partials/NestedPartials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/nested_partials/nested_partials.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/nested_partials/nested_partials.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/nested_partials/partials/fourth.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/nested_partials/partials/second.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/nested_partials/partials/third.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/partials/Partials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/partials/partials.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/partials/partials.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/partials/partials/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/recursive_partials/RecursivePartials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/recursive_partials/partials/child.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/recursive_partials/recursive_partials.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/recursive_partials/recursive_partials.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_iterator_objects/SectionIteratorObjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_iterator_objects/section_iterator_objects.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_iterator_objects/section_iterator_objects.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_magic_objects/SectionMagicObjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_magic_objects/section_magic_objects.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_magic_objects/section_magic_objects.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_objects/SectionObjects.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_objects/section_objects.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/section_objects/section_objects.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/sections/Sections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/sections/sections.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/sections/sections.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/sections_nested/SectionsNested.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/sections_nested/sections_nested.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/sections_nested/sections_nested.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/simple/Simple.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/simple/simple.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/simple/simple.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/unescaped/Unescaped.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/unescaped/unescaped.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/unescaped/unescaped.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/utf8/UTF8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/utf8/utf8.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/utf8/utf8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/utf8_unescaped/UTF8Unescaped.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/utf8_unescaped/utf8_unescaped.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/utf8_unescaped/utf8_unescaped.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/whitespace/Whitespace.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/whitespace/partials/alphabet.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/whitespace/whitespace.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/examples/whitespace/whitespace.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/templates/alpha.ms" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/templates/beta.ms" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/templates/one.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-party/mustache/test/fixtures/templates/two.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/footer.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/formAltaView.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/homeView.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/registro_view.php" afterDir="false" />
+    <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/configuration.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/MySqlDatabase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/MySqlDatabase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/Redirect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/ValidarUsuarioLogeado.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper/ValidarUsuarioLogeado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/login_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/PW2_Pregunta2/composer.json</pharConfigPath>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/third-party/mustache/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ain" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -244,10 +46,10 @@
       <path value="$PROJECT_DIR$/PW2_Pregunta2/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2WUsHXqEDPkkFk3W9943YsO20jg" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -264,7 +66,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ain",
+    "git-widget-placeholder": "shushu",
+    "last_opened_file_path": "C:/Users/Shushu/Desktop/PrograWeb2/PW2_Pregunta2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -288,14 +91,28 @@
       <option name="presentableId" value="Default" />
       <updated>1696798408159</updated>
       <workItem from="1696798412488" duration="13188000" />
+      <workItem from="1696821144504" duration="2992000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Iniciar Sesion Andando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iniciar Sesion Andando" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

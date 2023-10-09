@@ -25,4 +25,12 @@ class Database {
         else
             return [];
     }
+
+    public function insert($sql) {
+        return mysqli_query($this->conn, $sql);
+    }
+
+    public function update($sql){
+        return mysqli_query($this->conn, $sql);
+    }
 }

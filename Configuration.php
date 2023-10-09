@@ -4,7 +4,6 @@ include_once('helper/Render.php');
 include_once('helper/MustacheRender.php');
 include_once("helper/Router.php");
 include_once("helper/Logger.php");
-include_once('helper/Redirect.php');
 
 include_once('third-party/mustache/src/Mustache/Autoloader.php');
 
@@ -28,11 +27,11 @@ class Configuration {
     public function getDatabase()
     {
         $config = $this->getArrayConfig();
-        return new MySqlDatabase(
+        return new Database(
             $config['servername'],
             $config['username'],
             $config['password'],
-            $config['database']);
+            $config['dbname']);
     }
     private function getRenderer()
     {
@@ -48,6 +47,6 @@ class Configuration {
     }
 
     public function getRouter() {
-        return new Router($this,"getHomeController","list");
+        return new Router($this,"getHomeController","login");
     }
 }
