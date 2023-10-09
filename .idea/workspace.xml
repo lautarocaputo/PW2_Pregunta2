@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion entra, falla home">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Ahora si andando el iniciar sesion y home">
+      <change afterPath="$PROJECT_DIR$/model/RegisterModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/register_view.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/ValidarUsuarioLogeado.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper/ValidarUsuarioLogeado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log-2023-10-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-09.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/HomeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/LoginModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/LoginModel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696798408159</updated>
       <workItem from="1696798412488" duration="13188000" />
-      <workItem from="1696821144504" duration="11793000" />
+      <workItem from="1696821144504" duration="17374000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciar Sesion Andando">
       <option name="closed" value="true" />
@@ -106,7 +109,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696860743025</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ahora si andando el iniciar sesion y home">
+      <option name="closed" value="true" />
+      <created>1696863713814</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696863713814</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ahora si andando el iniciar sesion y home">
+      <option name="closed" value="true" />
+      <created>1696863735270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696863735270</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +146,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Iniciar Sesion Andando" />
     <MESSAGE value="Iniciar Sesion entra, falla home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iniciar Sesion entra, falla home" />
+    <MESSAGE value="Ahora si andando el iniciar sesion y home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ahora si andando el iniciar sesion y home" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

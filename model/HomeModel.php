@@ -10,7 +10,7 @@ class HomeModel
     }
 
     public function getUserById($id) {
-        $query = "SELECT * FROM usuario WHERE id = '$id'";
+        $query = "SELECT * FROM usuarios WHERE id = '$id'";
         return $this->database->query($query);
     }
 }

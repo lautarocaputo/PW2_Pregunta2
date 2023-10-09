@@ -15,10 +15,6 @@ class LoginController
     {
         // Lógica para mostrar el formulario de inicio de sesión
         $this->renderer->render('login');
-        if (isset($_GET['token'])) {
-            $token = $_GET['token'];
-            $this->loginModel->setUserVerified($token);
-        }
     }
 
     public function ingresarlogin()
@@ -30,7 +26,6 @@ class LoginController
         $usuario = $this->loginModel->getUser($username, $password);
         $idUsuario = $usuario[0]['id'] ?? "";
         $usuarioVerificado = $usuario[0]['esta_verificado'] ?? "";
-        echo " <p>$usuario[0], $idUsuario, $usuarioVerificado</p>  ";
 
         if (!empty($usuario)) {
             $_SESSION['actualUser'] = $idUsuario;

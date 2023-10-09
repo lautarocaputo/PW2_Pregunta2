@@ -11,12 +11,12 @@ class LoginModel
 
     public function getUser($username, $password)
     {
-        $query = "SELECT * FROM usuario WHERE NombreUsuario = '$username' AND Contrasenia = '$password'";
+        $query = "SELECT * FROM usuarios WHERE nombre_usuario = '$username' AND contrasena = '$password'";
         return $this->database->query($query);
     }
 
     public function setUserVerified($token) {
-        $query =  "UPDATE usuario SET esta_verificado = 'true' WHERE verify_token = '$token'";
+        $query =  "UPDATE usuarios SET esta_verificado = 'true' WHERE verify_token = '$token'";
         return $this->database->update($query);
     }
 
