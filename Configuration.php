@@ -10,10 +10,12 @@ include_once ('controller/HomeController.php');
 include_once ('controller/LoginController.php');
 include_once ('controller/LogOutController.php');
 include_once ('controller/RegisterController.php');
+include_once ('controller/PlayController.php');
 
 include_once ('model/HomeModel.php');
 include_once ('model/LoginModel.php');
 include_once ('model/RegisterModel.php');
+include_once ('model/playModel.php');
 
 
 class Configuration {
@@ -61,6 +63,12 @@ class Configuration {
     {
         $model = new HomeModel($this->getDatabase());
         return new HomeController($model, $this->getRenderer());
+    }
+
+    public function getPlayController()
+    {
+        $model = new playModel($this->getDatabase());
+        return new PlayController($model, $this->getRenderer());
     }
 
     public function getRouter() {
