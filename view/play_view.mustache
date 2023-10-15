@@ -1,15 +1,35 @@
-<!-- FILEPATH: /C:/xampp/htdocs/view/play_view.mustache -->
 {{> header}}
 
-<html>
- <body>
-        <h1>Play Game</h1>
-        <p>Welcome to the game! Here are the rules:</p>
-        <form action="/play/empezar" method="POST">
-            <button type="submit">Start Game</button>
-        </form>
-    </body>
-</html>
+<div class="container">
+    <h1 class="mt-5">Play Game</h1>
+    <div class="row">
+        <div class="col-md-12">
+            {{#pregunta}}
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h3 class="card-title">Pregunta</h3>
+                        <p class="card-text">{{Pregunta_texto}}</p>
+                    </div>
+                </div>
+            {{/pregunta}}
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h3 class="card-title">Seleccione Respuesta</h3>
+                    <form action="/play/validarRespuesta" method="POST">
+                        {{#respuestas}}
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="respuestaID" value="{{Respuesta_ID}}" id="respuesta{{Respuesta_ID}}">
+                                <label class="form-check-label" for="respuesta{{Respuesta_ID}}">
+                                    {{Respuesta_texto}}
+                                </label>
+                            </div>
+                        {{/respuestas}}
+                        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {{> footer}}
-
-

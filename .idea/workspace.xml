@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
+      <change afterPath="$PROJECT_DIR$/log/log-2023-10-15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/ValidarUsuarioLogeado.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper/ValidarUsuarioLogeado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log-2023-10-09.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-09.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/home_view.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/partial/header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/partial/header.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/PlayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PlayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log-2023-10-14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/playModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PlayModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/play_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/play_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;shushu&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lautaro&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Shushu/Desktop/PrograWeb2/PW2_Pregunta2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -83,6 +85,12 @@
       <recent name="C:\xampp\htdocs\scripts" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="C:\xampp\htdocs\third-party\mustache\vendor\autoload.php" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/third-party/mustache/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -93,6 +101,8 @@
       <updated>1696798408159</updated>
       <workItem from="1696798412488" duration="13188000" />
       <workItem from="1696821144504" duration="2992000" />
+      <workItem from="1697253261653" duration="994000" />
+      <workItem from="1697399610980" duration="1925000" />
     </task>
     <servers />
   </component>

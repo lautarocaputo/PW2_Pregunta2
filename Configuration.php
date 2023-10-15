@@ -15,7 +15,7 @@ include_once ('controller/PlayController.php');
 include_once ('model/HomeModel.php');
 include_once ('model/LoginModel.php');
 include_once ('model/RegisterModel.php');
-include_once ('model/playModel.php');
+include_once('model/PlayModel.php');
 
 
 class Configuration {

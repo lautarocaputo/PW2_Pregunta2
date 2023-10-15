@@ -14,35 +14,6 @@ class PlayController
 
     public function index()
     {
-        
-        $data=array();
-        $this->renderer->render('play',$data);
-    }
-
-    public function submitAnswer()
-    {
-        // Get the submitted answer from the request
-        $submittedAnswer = $_POST['answer'];
-
-        // Check if the answer is correct
-        $isCorrect = $this->checkAnswer($submittedAnswer);
-
-        // Update the user's score and progress
-        $this->updateScoreAndProgress($isCorrect);
-
-        // Load the next question or end the game if there are no more questions
-        $nextQuestion = $this->loadNextQuestion();
-        if ($nextQuestion) {
-            // Render the next question view
-            $this->renderView('question', $nextQuestion);
-        } else {
-            // Render the game over view
-            $this->renderView('gameover');
-        }
-    }
-
-    public function empezar()
-    {
         $data=array();
         $this->renderer->render('play',$data);
     }
@@ -66,7 +37,6 @@ class PlayController
         } else {
             $this->renderer->render('perdiste');
         }
-  
     }
 
     public function validarRespuesta()
@@ -80,5 +50,4 @@ class PlayController
             $this->renderer->render('perdiste');
         }
     }
-    
 }
