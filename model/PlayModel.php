@@ -23,7 +23,7 @@ class playModel
     }
 
     public function getRespuestas($tematica) {
-        $sql = "SELECT * FROM respuestas WHERE Tematica_ID = $tematica ORDER BY RAND()";
+        $sql = "SELECT * FROM Respuestas WHERE Tematica_ID = $tematica ORDER BY RAND()";
         return $this->database->query($sql);
     }
 

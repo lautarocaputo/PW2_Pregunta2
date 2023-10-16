@@ -228,3 +228,20 @@
 [2023-10-16][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Tematica_ID = 4 AND Utilizada = 0 ORDER BY RAND() LIMIT 1 
 [2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
 [2023-10-16][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Tematica_ID = 4 AND Utilizada = 0 ORDER BY RAND() LIMIT 1 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Tematica_ID = 1 AND Utilizada = 0 ORDER BY RAND() LIMIT 1 
+[2023-10-16][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 1 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Tematica_ID = 1 AND Utilizada = 0 ORDER BY RAND() LIMIT 1 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Tematica_ID = 3 AND Utilizada = 0 ORDER BY RAND() LIMIT 1 
+[2023-10-16][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 3 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Tematica_ID = 2 AND Utilizada = 0 ORDER BY RAND() LIMIT 1 
+[2023-10-16][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 2 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-16][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
