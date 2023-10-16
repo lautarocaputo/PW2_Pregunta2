@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/PlayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PlayController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/log-2023-10-16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/PlayModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/PlayModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/login_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/login_view.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/partial/header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/partial/header.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/perdiste_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/perdiste_view.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/play_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/play_view.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +102,8 @@
       <workItem from="1696798412488" duration="13188000" />
       <workItem from="1696821144504" duration="2992000" />
       <workItem from="1697253261653" duration="994000" />
-      <workItem from="1697399610980" duration="6435000" />
+      <workItem from="1697399610980" duration="6667000" />
+      <workItem from="1697469628974" duration="1288000" />
     </task>
     <servers />
   </component>

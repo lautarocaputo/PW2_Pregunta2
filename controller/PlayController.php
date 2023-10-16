@@ -23,6 +23,7 @@ class PlayController
         if ($pregunta = $this->playModel->getPreguntaRandom()) {
             $tematica = $pregunta['Tematica_ID'];
             $respuestas = $this->playModel->getRespuestas($tematica);
+            shuffle($respuestas);
             $data = array(
                 'pregunta' => $pregunta,
                 'respuestas' => $respuestas,
@@ -36,6 +37,11 @@ class PlayController
 
     public function validarRespuesta()
     {
+        if (!isset($_POST['respuestaID'])) {
+            $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.']);
+            return;
+        }
+
         $respuestaID = $_POST['respuestaID'];
         $preguntaID = $_GET['preguntaID'];
         $puntos = $_GET['puntos'];
@@ -44,7 +50,7 @@ class PlayController
         $model->marcarPreguntaUtilizada($preguntaID);
 
         $respuestaCorrecta = $model->validarRespuesta($respuestaID);
-        
+
         if (!$respuestaCorrecta) {
             $_SESSION['puntaje'] = 0;
             $this->renderer->render('perdiste', ['error_msg' => 'Perdiste, respuesta incorrecta.']);
@@ -53,4 +59,6 @@ class PlayController
             $this->jugar();
         }
     }
+
 }
+
