@@ -9,13 +9,12 @@ class playModel
         $this->database = $database;
     }
 
-    public function getPreguntaRandom($tematicaID) {
-        $sql = "SELECT * FROM Preguntas WHERE Tematica_ID = $tematicaID AND Utilizada = 0 ORDER BY RAND() LIMIT 1";
+    public function getPreguntaRandom() {
+        $sql = "SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1";
         $pregunta = $this->database->query($sql);
 
         if (!empty($pregunta)) {
             $preguntaID = $pregunta[0]['Pregunta_ID'];
-            $this->marcarPreguntaUtilizada($preguntaID);
             return $pregunta[0];
         }
 
@@ -33,10 +32,14 @@ class playModel
     }
 
     public function validarRespuesta($respuestaID) {
-        $sql = "SELECT * FROM Respuestas WHERE Respuesta_ID = $respuestaID AND Es_Correcta = 1";
+        $sql = "SELECT * FROM respuestas WHERE Respuesta_ID = $respuestaID AND Correcta = 1";
         $respuesta = $this->database->query($sql);
 
-        return !empty($respuesta);
+        if(isset($respuesta[0])){
+            return $respuesta[0];
+        } else {
+            return false;
+        }
     }
 
 }

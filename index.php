@@ -2,7 +2,9 @@
 include_once("helper/ValidarUsuarioLogeado.php");
 include_once('Configuration.php');
 
+$_SESSION['puntaje'] = 0;
 session_start();
+
 
 $configuration = new Configuration();
 $router = $configuration->getRouter();

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2023 a las 03:58:04
+-- Tiempo de generación: 16-10-2023 a las 06:54:22
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -44,7 +44,12 @@ INSERT INTO `preguntas` (`Pregunta_ID`, `Pregunta_texto`, `Tematica_ID`, `Dificu
 (1, '¿Cuál es el resultado de 2 + 2?', 1, 'Fácil', 10, 0),
 (2, '¿Quién fue el primer presidente de Estados Unidos?', 2, 'Medio', 15, 0),
 (3, '¿Cuál es el símbolo químico del oxígeno?', 3, 'Difícil', 20, 0),
-(4, '¿Cuál es la capital de Francia?', 4, 'Fácil', 10, 0);
+(4, '¿Cuál es la capital de Francia?', 4, 'Fácil', 10, 0),
+(5, '¿Cuál es el concepto de herencia en programación orientada a objetos?', 5, 'Fácil', 10, 0),
+(6, '¿Qué es JavaScript y cómo se utiliza en el desarrollo web?', 6, 'Medio', 15, 0),
+(7, '¿Cuál es la sentencia SQL para recuperar todos los registros de una tabla?', 7, 'Fácil', 10, 0),
+(8, '¿Qué es una dirección IP y cómo se clasifican las IP?', 8, 'Medio', 15, 0),
+(9, '¿Cuál es el teorema de Fermat?', 9, 'Difícil', 20, 0);
 
 -- --------------------------------------------------------
 
@@ -79,7 +84,27 @@ INSERT INTO `respuestas` (`Respuesta_ID`, `Tematica_ID`, `Respuesta_texto`, `Cor
 (13, 4, 'Berlín', 0),
 (14, 4, 'Madrid', 0),
 (15, 4, 'París', 1),
-(16, 4, 'Londres', 0);
+(16, 4, 'Londres', 0),
+(17, 5, 'La herencia permite a una clase heredar atributos y métodos de otra clase.', 1),
+(18, 5, 'La herencia es una característica de los lenguajes orientados a objetos.', 0),
+(19, 5, 'La herencia solo se aplica a las clases base.', 0),
+(20, 5, 'La herencia es lo mismo que la agregación de clases.', 0),
+(21, 6, 'JavaScript es un lenguaje de programación ampliamente utilizado en el desarrollo web.', 1),
+(22, 6, 'JavaScript es un lenguaje utilizado solo en el lado del servidor.', 0),
+(23, 6, 'JavaScript es un tipo de base de datos.', 0),
+(24, 6, 'JavaScript se utiliza solo para diseño gráfico en el desarrollo web.', 0),
+(25, 7, 'SELECT * FROM nombre_tabla;', 1),
+(26, 7, 'INSERT INTO nombre_tabla;', 0),
+(27, 7, 'UPDATE nombre_tabla;', 0),
+(28, 7, 'DELETE FROM nombre_tabla;', 0),
+(29, 8, 'Una dirección IP es un identificador numérico asignado a cada dispositivo en una red.', 1),
+(30, 8, 'IP significa Internet Protocol y es utilizado solo en Internet.', 0),
+(31, 8, 'Las IP no se clasifican de ninguna manera.', 0),
+(32, 8, 'IP es una sigla para \"Información Personal\".', 0),
+(33, 9, 'El teorema de Fermat establece que no hay tres enteros positivos a, b y c que cumplan la ecuación a^n + b^n = c^n para cualquier n mayor que 2.', 1),
+(34, 9, 'El teorema de Fermat es una fórmula matemática que calcula áreas de figuras geométricas.', 0),
+(35, 9, 'El teorema de Fermat se utiliza en la programación de algoritmos.', 0),
+(36, 9, 'El teorema de Fermat es una regla de diseño en la programación orientada a objetos.', 0);
 
 -- --------------------------------------------------------
 
@@ -100,7 +125,12 @@ INSERT INTO `tematicas` (`Tematica_ID`, `Nombre`) VALUES
 (1, 'Matemáticas'),
 (2, 'Historia'),
 (3, 'Ciencias'),
-(4, 'Geografía');
+(4, 'Geografía'),
+(5, 'Programación en C++'),
+(6, 'Desarrollo web con JavaScript'),
+(7, 'Bases de datos SQL'),
+(8, 'Redes de computadoras'),
+(9, 'Matemáticas avanzadas');
 
 -- --------------------------------------------------------
 
@@ -169,19 +199,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `preguntas`
 --
 ALTER TABLE `preguntas`
-  MODIFY `Pregunta_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Pregunta_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `respuestas`
 --
 ALTER TABLE `respuestas`
-  MODIFY `Respuesta_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `Respuesta_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de la tabla `tematicas`
 --
 ALTER TABLE `tematicas`
-  MODIFY `Tematica_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Tematica_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
