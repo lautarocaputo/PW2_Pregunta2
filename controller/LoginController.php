@@ -13,7 +13,6 @@ class LoginController
 
     public function login()
     {
-        // Lógica para mostrar el formulario de inicio de sesión
         $this->renderer->render('login');
     }
 

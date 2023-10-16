@@ -20,15 +20,13 @@ class PlayController
 
     public function jugar()
     {
-        $model = new playModel($this->database);
-
         $tematicaID = mt_rand(1, 4);
 
-        $pregunta = $model->getPreguntaRandom($tematicaID);
+        $pregunta = $this->playModel->getPreguntaRandom($tematicaID);
 
         if ($pregunta) {
-            $preguntaID = $pregunta['Pregunta_ID'];
-            $respuestas = $model->getRespuestas($preguntaID);
+            $tematica = $pregunta['Tematica_ID'];
+            $respuestas = $this->playModel->getRespuestas($tematica);
             $data = array(
                 'pregunta' => $pregunta,
                 'respuestas' => $respuestas

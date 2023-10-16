@@ -22,8 +22,8 @@ class playModel
         return null;
     }
 
-    public function getRespuestas($preguntaID) {
-        $sql = "SELECT * FROM Respuestas WHERE Pregunta_ID = $preguntaID ORDER BY RAND()";
+    public function getRespuestas($tematica) {
+        $sql = "SELECT * FROM respuestas WHERE Tematica_ID = $tematica ORDER BY RAND()";
         return $this->database->query($sql);
     }
 
