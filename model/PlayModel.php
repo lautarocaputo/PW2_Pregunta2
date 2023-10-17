@@ -42,4 +42,43 @@ class playModel
         }
     }
 
+    public function getPuntajeActual($actualUser) {
+        $sql = "SELECT puntuacion_actual FROM usuarios WHERE id = $actualUser";
+        $puntaje = $this->database->query($sql);
+        return $puntaje[0]['puntuacion_actual'];
+    }
+
+    public function guardarPuntaje($userID, $puntaje)
+    {
+        $sql = "UPDATE usuarios SET puntuacion_actual = $puntaje WHERE id = $userID";
+        return $this->database->update($sql);
+    }
+
+    public function getPuntajeMasAlto($userID)
+    {
+        $sql = "SELECT puntuacion_masalta FROM usuarios WHERE id = $userID";
+        $result = $this->database->query($sql);
+
+        if (!empty($result)) {
+            return (int)$result[0]['puntuacion_masalta'];
+        } else {
+            return 0;
+        }
+    }
+
+    public function actualizarPuntajeMasAlto($userID, $puntaje)
+    {
+        $puntajeActual = $this->getPuntajeMasAlto($userID);
+
+        if ($puntaje > $puntajeActual) {
+            $sql = "UPDATE usuarios SET puntuacion_masalta = $puntaje WHERE id = $userID";
+            return $this->database->update($sql);
+        }
+    }
+
+    public function marcarPreguntasUtilizadas() {
+        $sql = "UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1";
+        $this->database->query($sql);
+    }
+
 }
