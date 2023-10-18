@@ -15,6 +15,7 @@ class PlayController
     {
         $data = array();
         $this->renderer->render('play', $data);
+        
     }
 
     public function jugar()
@@ -34,6 +35,7 @@ class PlayController
             'pregunta' => $pregunta,
             'respuestas' => $respuestas,
             'puntaje' => $_SESSION['puntaje'],
+            'puntajeMasAlto' => $_SESSION['puntajeMasAlto']
         ];
 
         $this->renderer->render('play', $data);
@@ -48,9 +50,8 @@ class PlayController
 
         $respuestaID = $_POST['respuestaID'];
         $preguntaID = $_GET['preguntaID'];
-        $puntos = $_GET['puntos'];
         $model = $this->playModel;
-
+    
         $model->marcarPreguntaUtilizada($preguntaID);
 
         $respuestaCorrecta = $model->validarRespuesta($respuestaID);
@@ -59,23 +60,30 @@ class PlayController
             $this->jugar();
         } else {
             $_SESSION['puntaje'] += 1;
+            $puntajeEnPartida = $_SESSION['puntaje']; 
+            $this->playModel->guardarPuntaje($_SESSION['actualUser'], $puntajeEnPartida);
             $this->jugar();
         }
     }
 
     private function mostrarPuntuacion()
     {
+        
         $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);
-
-        $this->playModel->guardarPuntaje($_SESSION['actualUser'], $puntajeActual);
-
         $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
+
         if ($puntajeActual > $puntajeMasAlto) {
             $this->playModel->actualizarPuntajeMasAlto($_SESSION['actualUser'], $puntajeActual);
         }
+ 
+        $this->playModel->guardarPuntaje($_SESSION['actualUser'], 0);
+        $_SESSION['puntaje'] = 0;
+        $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
+        $_SESSION['puntajeMasAlto'] = $puntajeMasAlto;
+
         $this->playModel->marcarPreguntasUtilizadas();
 
-        $this->renderer->render('perdiste', ['puntaje' => $puntajeActual]);
+        $this->renderer->render('perdiste', ['puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
     }
 
 }

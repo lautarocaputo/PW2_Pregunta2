@@ -68,12 +68,8 @@ class playModel
 
     public function actualizarPuntajeMasAlto($userID, $puntaje)
     {
-        $puntajeActual = $this->getPuntajeMasAlto($userID);
-
-        if ($puntaje > $puntajeActual) {
-            $sql = "UPDATE usuarios SET puntuacion_masalta = $puntaje WHERE id = $userID";
-            return $this->database->update($sql);
-        }
+        $sql = "UPDATE usuarios SET puntuacion_masalta = $puntaje WHERE id = $userID";
+        return $this->database->update($sql);
     }
 
     public function marcarPreguntasUtilizadas() {
