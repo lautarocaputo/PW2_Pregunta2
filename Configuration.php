@@ -11,7 +11,9 @@ include_once ('controller/LoginController.php');
 include_once ('controller/LogOutController.php');
 include_once ('controller/RegisterController.php');
 include_once ('controller/PlayController.php');
+include_once ('controller/ProfileController.php');
 
+include_once ('model/ProfileModel.php');
 include_once ('model/HomeModel.php');
 include_once ('model/LoginModel.php');
 include_once ('model/RegisterModel.php');
@@ -69,6 +71,12 @@ class Configuration {
     {
         $model = new playModel($this->getDatabase());
         return new PlayController($model, $this->getRenderer());
+    }
+
+    public function getProfileController()
+    {
+        $model = new ProfileModel($this->getDatabase());
+        return new ProfileController($model, $this->getRenderer());
     }
 
     public function getRouter() {

@@ -35,7 +35,7 @@ class PlayController
             'pregunta' => $pregunta,
             'respuestas' => $respuestas,
             'puntaje' => $_SESSION['puntaje'],
-            'puntajeMasAlto' => $_SESSION['puntajeMasAlto']
+            'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto'])
         ];
 
         $this->renderer->render('play', $data);
