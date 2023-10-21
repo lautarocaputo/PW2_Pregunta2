@@ -37,7 +37,7 @@ class Configuration {
             $config['servername'],
             $config['username'],
             $config['password'],
-            $config['dbname']);
+            $config['database']);
     }
     private function getRenderer()
     {
