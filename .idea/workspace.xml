@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
-      <change afterPath="$PROJECT_DIR$/controller/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/log-2023-10-21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/ProfileModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/profile_view.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/PlayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PlayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log-2023-10-18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log-2023-10-21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-21.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/home_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/home_view.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/partial/header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/partial/header.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/profile_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/profile_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

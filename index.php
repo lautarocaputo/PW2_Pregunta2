@@ -7,7 +7,6 @@ $_SESSION['puntajeMasAlto'] = 0;
 
 session_start();
 
-
 $configuration = new Configuration();
 $router = $configuration->getRouter();
 

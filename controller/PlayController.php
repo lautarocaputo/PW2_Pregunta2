@@ -15,7 +15,6 @@ class PlayController
     {
         $data = array();
         $this->renderer->render('play', $data);
-        
     }
 
     public function jugar()

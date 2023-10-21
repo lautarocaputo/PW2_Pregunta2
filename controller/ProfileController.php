@@ -11,6 +11,12 @@ class ProfileController
         $this->renderer = $renderer;
     }
 
+    public function index()
+    {
+        $data = array();
+        $this->renderer->render('perfil', $data);
+    }
+
     public function perfil()
     {
         $idUser = $_SESSION['actualUser'];
