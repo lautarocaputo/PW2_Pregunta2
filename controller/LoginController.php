@@ -14,10 +14,6 @@ class LoginController
     public function login()
     {
         $this->renderer->render('login');
-        if (isset($_GET['token'])) {
-            $token = $_GET['token'];
-            $this->loginModel->setUserVerified($token);
-        }
     }
 
     public function ingresarlogin()
@@ -25,13 +21,11 @@ class LoginController
 
         $username = $_POST['username'];
         $password = $_POST['password'];
-        $hashPassword = md5($password);
-        $usuario = $this->loginModel->getUser($username, $hashPassword);
-        $idUsuario = $usuario[0]['idUsuario'] ?? "";
+        $usuario = $this->loginModel->getUser($username, $password);
+        $idUsuario = $usuario[0]['id'] ?? "";
         $usuarioVerificado = $usuario[0]['esta_verificado'] ?? "";
 
-
-        if (!empty($usuario) && $usuarioVerificado == 'true') {
+        if (!empty($usuario)) {
             $_SESSION['actualUser'] = $idUsuario;
             header('location: /');
             exit();
@@ -39,7 +33,5 @@ class LoginController
             $error['errorDatos'] = "El username o contraseña son incorrectos";
             $this->renderer->render('login', $error);
         }
-
-
     }
 }

@@ -14,6 +14,8 @@ class HomeController
     public function list()
     {
         $idUser = $_SESSION['actualUser'];
+        $this->homeModel->marcarPreguntasUtilizadas();
+        $this->homeModel->resetearPuntaje($idUser);
         $data["user"] = $this->homeModel->getUserById($idUser);
         $this->renderer->render('home', $data);
     }
