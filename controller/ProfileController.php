@@ -14,13 +14,13 @@ class ProfileController
     public function index()
     {
         $data = array();
-        $this->renderer->render('perfil', $data);
+        $this->renderer->render('profile', $data);
     }
 
     public function perfil()
     {
         $idUser = $_SESSION['actualUser'];
         $data["user"] = $this->profileModel->getUserById($idUser);
-        $this->renderer->render("perfil", $data);
+        $this->renderer->render("profile", $data);
     }
 }
