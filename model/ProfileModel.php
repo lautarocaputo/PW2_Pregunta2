@@ -10,7 +10,7 @@ class ProfileModel
 
     public function getUserById($idUser)
     {
-        $sql = "SELECT * FROM usuarios WHERE id = $idUser";
+        $sql = "SELECT * FROM usuarios WHERE id = '$idUser'";
         $user = $this->database->query($sql);
         return $user[0];
     }
