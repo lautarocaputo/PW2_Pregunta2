@@ -8,8 +8,34 @@
         <div class="buttons-home-cont">
             <br>
             {{#user}}
-                <p>Hola, bienvenido  <span style="font-weight: bold"> {{nombre_completo}}</span></p>
+                <p>Hola, bienvenido <span style="font-weight: bold">{{nombre_completo}}</span></p>
             {{/user}}
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <br>
+            <h2>Ranking</h2>
+            <div class="buttons-home-cont">
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Puntos más altos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#rankingScore}}
+                        <tr>
+                            <td>{{nombre_completo}}</td>
+                            <td>{{puntuacion_masAlta}}</td>
+                        </tr>
+                        {{/rankingScore}}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

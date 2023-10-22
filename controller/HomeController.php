@@ -18,6 +18,7 @@ class HomeController
         $this->homeModel->marcarPreguntasUtilizadas();
         $this->homeModel->resetearPuntaje($idUser);
         $data["user"] = $this->homeModel->getUserById($idUser);
+        $data["rankingScore"] = $this->homeModel->getUserWithHighestScore($idUser);
         $this->renderer->render('home', $data);
     }
 }
