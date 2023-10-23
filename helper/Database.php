@@ -33,5 +33,4 @@ class Database {
     public function update($sql){
         return mysqli_query($this->conn, $sql);
     }
-
 }

@@ -112,3 +112,32 @@
 [2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
 [2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
 [2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '' 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-21][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-21][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 

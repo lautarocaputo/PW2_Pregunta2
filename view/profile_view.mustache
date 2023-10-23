@@ -2,6 +2,63 @@
 <!DOCTYPE html>
 <html class="perfil">
 <body>
-    <h1>Hola mundo!</h1>
+{{#user}}
+    <div class="container">
+        <h1 class="mb-3 mt-3">Perfil</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="nombreCompleto"><strong>Nombre Completo</strong></label>
+                    <p id="nombreCompleto">{{nombre_completo}}</p>
+                </div>
+                <div class="form-group">
+                    <label for="anoNacimiento"><strong>Año de Nacimiento</strong></label>
+                    <p id="anoNacimiento">{{ano_nacimiento}}</p>
+                </div>
+                <div class "form-group">
+                <label for="sexo"><strong>Sexo</strong></label>
+                <p id="sexo">{{sexo}}</p>
+            </div>
+            <div class="form-group">
+                <label for="pais"><strong>País</strong></label>
+                <p id="pais">{{pais}}</p>
+            </div>
+            <div class="form-group">
+                <label for="ciudad"><strong>Ciudad</strong></label>
+                <p id="ciudad">{{ciudad}}</p>
+            </div>
+            <div class="form-group">
+                <label for="correoElectronico"><strong>Correo Electrónico</strong></label>
+                <p id="correoElectronico">{{correo_electronico}}</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="contrasena"><strong>Contraseña</strong></label>
+                <p id="contrasena">{{contrasena}}</p>
+            </div>
+            <div class="form-group">
+                <label for="nombreUsuario"><strong>Nombre de Usuario</strong></label>
+                <p id="nombreUsuario">{{nombre_usuario}}</p>
+            </div>
+            <div class="form-group">
+                <label for="fotoPerfil"><strong>Foto de Perfil</strong></label>
+                <img id="fotoPerfil" src="{{foto_perfil}}" alt="Foto de perfil">
+            </div>
+            <div class="form-group">
+                <label for="puntuacionActual"><strong>Puntuación Actual</strong></label>
+                <p id="puntuacionActual">{{puntuacion_actual}}</p>
+            </div>
+            <div class="form-group">
+                <label for="puntuacionMaxima"><strong>Puntuación Máxima</strong></label>
+                <p id="puntuacionMaxima">{{puntuacion_masalta}}</p>
+            </div>
+            <div class="form-group">
+                <label for="fechaRegistro"><strong>Fecha de Registro</strong></label>
+                <p id="fechaRegistro">{{fecha_registro}}</p>
+            </div>
+        </div>
+    </div>
+{{/user}}
 </body>
 </html>
