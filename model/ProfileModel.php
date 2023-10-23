@@ -14,4 +14,16 @@ class ProfileModel
         $user = $this->database->query($sql);
         return $user[0];
     }
+
+    public function buscarPerfil($usuario)
+    {
+        $sql = "SELECT * FROM usuarios WHERE nombre_usuario = '$usuario' OR correo_electronico = '$usuario'";
+        $user = $this->database->query($sql);
+
+        if($user){
+            return $user[0];
+        }else{
+            return false;
+        }
+    }
 }

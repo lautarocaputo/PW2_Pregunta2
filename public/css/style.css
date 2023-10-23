@@ -28,3 +28,22 @@ body {
     font-weight: bold;
     padding: .5rem;
 }
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador form {
+    display: flex;
+    align-items: center;
+    margin-block-end: 0;
+}
+
+.buscador input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
