@@ -1,31 +1,607 @@
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'guilleAlvarez@gmail.com' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' AND contrasena = '123456' 
+git[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' AND contrasena = 'test1'
 [2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '4' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '4' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '4' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '4' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
 [2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '4' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '4' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
 [2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'guilleAlvarez@gmail.com' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'guilleAlvarez@gmail.com' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' AND contrasena = '123456' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'guilleAlvarez@gmail.com' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'galvarez' AND contrasena = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
 [2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '5' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
 [2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
 [2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
-[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ain' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR email = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR correo_electronico = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR correo_electronico = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' OR correo_electronico = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' OR correo_electronico = '123456' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR correo_electronico = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR correo_electronico = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = '123456' AND contrasena = 'test1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'AS' OR correo_electronico = 'AS' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 4 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 1 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 2 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM Respuestas WHERE Tematica_ID = 3 ORDER BY RAND() 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'asd' OR correo_electronico = 'asd' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR correo_electronico = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'test@test.com' OR correo_electronico = 'test@test.com' 
+[2023-10-23][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1'

@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
-      <change afterPath="$PROJECT_DIR$/log/log-2023-10-23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/404_view.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/helper/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log-2023-10-22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-22.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/RegisterModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/RegisterModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log-2023-10-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/ProfileModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/ProfileModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/partial/header.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/partial/header.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/profile_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/profile_view.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/register_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ain",
+    "git-widget-placeholder": "Merging ain",
     "last_opened_file_path": "C:/Users/Shushu/Desktop/PrograWeb2/PW2_Pregunta2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
