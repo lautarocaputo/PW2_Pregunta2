@@ -123,3 +123,5 @@
 [2023-10-22][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
 [2023-10-22][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
 [2023-10-22][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-22][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-10-22][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
