@@ -18,6 +18,14 @@ class HomeController
         $this->homeModel->resetearPuntaje($idUser);
         $data["user"] = $this->homeModel->getUserById($idUser);
         $data["rankingScore"] = $this->homeModel->getUserWithHighestScore($idUser);
+
+        $position = 1;
+
+        foreach ($data["rankingScore"] as &$user) {
+            $user['position'] = $position;
+            $position++;
+        }
+
         $this->renderer->render('home', $data);
     }
 }

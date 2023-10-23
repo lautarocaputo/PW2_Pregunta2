@@ -24,10 +24,8 @@
                 <tbody>
                 {{#rankingScore}}
                     <tr>
-                        <td>
-                            <img src="../public/assets/primerPuesto.png" alt="1">
-                            <img src="../public/assets/segundoPuesto.png" alt="2">
-                            <img src="../public/assets/tercerPuesto.png" alt="3">
+                        <td class="position">
+                            {{position}}
                         </td>
                         <td>
                             {{nombre_completo}}
@@ -42,4 +40,26 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var positionColumns = document.querySelectorAll('.position');
+
+        positionColumns.forEach(function(positionColumn) {
+            var positionValue = positionColumn.innerText;
+
+            switch (positionValue) {
+                case '1':
+                    positionColumn.innerHTML = '<img src="../public/assets/primerPuesto.png" alt="1">';
+                    break;
+                case '2':
+                    positionColumn.innerHTML = '<img src="../public/assets/segundoPuesto.png" alt="2">';
+                    break;
+                case '3':
+                    positionColumn.innerHTML = '<img src="../public/assets/tercerPuesto.png" alt="3">';
+                    break;
+            }
+        });
+    });
+</script>
 </body>
