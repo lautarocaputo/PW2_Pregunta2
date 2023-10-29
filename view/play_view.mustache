@@ -64,7 +64,11 @@
         temporizador.textContent = tiempo;
         if (tiempo === 0) {
             clearInterval(intervalo);
-            document.getElementById("enviarBtn").click();
+            terminarPartida();
         }
     }, 1000);
+
+    function terminarPartida() {
+        window.location.href = "/play/mostrarPuntuacion";
+    }
 </script>

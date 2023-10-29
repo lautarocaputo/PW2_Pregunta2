@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
-      <change afterPath="$PROJECT_DIR$/log/log-2023-10-29.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/PlayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PlayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log-2023-10-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/RankingModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/RankingModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/log-2023-10-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-29.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/play_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/play_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +107,7 @@
       <workItem from="1698079652810" duration="5178000" />
       <workItem from="1698089509511" duration="791000" />
       <workItem from="1698524654035" duration="690000" />
-      <workItem from="1698534273157" duration="6822000" />
+      <workItem from="1698534273157" duration="9292000" />
     </task>
     <servers />
   </component>
