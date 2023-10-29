@@ -2,7 +2,10 @@
 
 <div class="container">
     <div class="text-center">
-        <h1 class="mt-5">Arranca el Pregunta2</h1>
+        <div class="text-center">
+            <h1 class="mt-5">Arranca el Pregunta2</h1>
+            <p>Temporizador: <span id="temporizador">{{tiempoRestante}}</span> segundos</p>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-12">
@@ -13,24 +16,24 @@
                         <p class="card-text">{{Pregunta_texto}}</p>
                     </div>
                 </div>
-            
+
             <div class="card mt-3">
-                <div class="card-body">
-                    <h3>Seleccione Respuesta</h3>
-                    <form action="/play/validarRespuesta?preguntaID={{Pregunta_ID}}&puntos={{Puntos}}" method="POST">
-                    {{/pregunta}}
-                        {{#respuestas}}
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="respuestaID" value="{{Respuesta_ID}}" id="respuesta{{Respuesta_ID}}">
-                                <label class="form-check-label" for="respuesta{{Respuesta_ID}}">
-                                    {{Respuesta_texto}}
-                                </label>
-                            </div>
-                        {{/respuestas}}
-                        <button type="submit" id="enviarBtn" class="btn btn-primary mt-3">Enviar</button>
-                    </form>
+            <div class="card-body">
+                <h3>Seleccione Respuesta</h3>
+                <form action="/play/validarRespuesta?preguntaID={{Pregunta_ID}}&puntos={{Puntos}}" method="POST">
+            {{/pregunta}}
+            {{#respuestas}}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="respuestaID" value="{{Respuesta_ID}}" id="respuesta{{Respuesta_ID}}">
+                    <label class="form-check-label" for="respuesta{{Respuesta_ID}}">
+                        {{Respuesta_texto}}
+                    </label>
                 </div>
-            </div>
+            {{/respuestas}}
+            <button type="submit" id="enviarBtn" class="btn btn-primary mt-3">Enviar</button>
+            </form>
+        </div>
+        </div>
         </div>
     </div>
 </div>
@@ -53,4 +56,15 @@
         updateButtonState();
     });
 </script>
-</html>
+<script>
+    var temporizador = document.getElementById("temporizador");
+    var tiempo = parseInt(temporizador.textContent);
+    var intervalo = setInterval(function () {
+        tiempo--;
+        temporizador.textContent = tiempo;
+        if (tiempo === 0) {
+            clearInterval(intervalo);
+            document.getElementById("enviarBtn").click();
+        }
+    }, 1000);
+</script>

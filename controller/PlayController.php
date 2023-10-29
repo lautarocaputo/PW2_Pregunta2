@@ -1,5 +1,4 @@
 <?php
-
 class PlayController
 {
     private $playModel;
@@ -19,6 +18,10 @@ class PlayController
 
     public function jugar()
     {
+        if (!isset($_SESSION['tiempoRestante'])) {
+            $_SESSION['tiempoRestante'] = 60;
+        }
+
         $pregunta = $this->playModel->getPreguntaRandom();
 
         if (!$pregunta) {
@@ -34,7 +37,8 @@ class PlayController
             'pregunta' => $pregunta,
             'respuestas' => $respuestas,
             'puntaje' => $_SESSION['puntaje'],
-            'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto'])
+            'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto']),
+            'tiempoRestante' => $_SESSION['tiempoRestante'],
         ];
 
         $this->renderer->render('play', $data);
@@ -50,7 +54,7 @@ class PlayController
         $respuestaID = $_POST['respuestaID'];
         $preguntaID = $_GET['preguntaID'];
         $model = $this->playModel;
-    
+
         $model->marcarPreguntaUtilizada($preguntaID);
 
         $respuestaCorrecta = $model->validarRespuesta($respuestaID);
@@ -59,22 +63,22 @@ class PlayController
             $this->jugar();
         } else {
             $_SESSION['puntaje'] += 1;
-            $puntajeEnPartida = $_SESSION['puntaje']; 
+            $puntajeEnPartida = $_SESSION['puntaje'];
             $this->playModel->guardarPuntaje($_SESSION['actualUser'], $puntajeEnPartida);
+            $_SESSION['tiempoRestante'] = $_SESSION['tiempoRestante'] - 1;
             $this->jugar();
         }
     }
 
     private function mostrarPuntuacion()
     {
-        
         $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);
         $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
 
         if ($puntajeActual > $puntajeMasAlto) {
             $this->playModel->actualizarPuntajeMasAlto($_SESSION['actualUser'], $puntajeActual);
         }
- 
+
         $this->playModel->guardarPuntaje($_SESSION['actualUser'], 0);
         $_SESSION['puntaje'] = 0;
         $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
@@ -84,6 +88,4 @@ class PlayController
 
         $this->renderer->render('perdiste', ['puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
     }
-
 }
-

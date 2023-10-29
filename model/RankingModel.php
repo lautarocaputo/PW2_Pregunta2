@@ -10,7 +10,7 @@ class RankingModel
 
     public function getUserWithHighestScore($idUser)
     {
-        $sql = "SELECT puntuacion_masAlta, nombre_completo FROM usuarios;
+        $sql = "SELECT puntuacion_masAlta, nombre_completo FROM usuarios";
         $user = $this->database->query($sql);
         return $user[0];
     }

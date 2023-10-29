@@ -31,5 +31,4 @@ class HomeModel
         return $this->database->update($sql);
     }
 
-
 }
