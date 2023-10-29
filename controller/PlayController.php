@@ -1,6 +1,5 @@
 <?php
-class PlayController
-{
+class PlayController {
     private $playModel;
     private $renderer;
 
@@ -39,7 +38,7 @@ class PlayController
             'respuestas' => $respuestas,
             'puntaje' => $_SESSION['puntaje'],
             'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto']),
-            'tiempoRestante' => $_SESSION['tiempoRestante'],
+            'tiempoRestante' => $_SESSION['tiempoRestante'] = 10,
         ];
 
         $this->renderer->render('play', $data);
@@ -87,6 +86,14 @@ class PlayController
         $this->playModel->marcarPreguntasUtilizadas();
 
         $this->renderer->render('perdiste', ['puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
+    }
+
+    public function getTiempoRestante()
+    {
+        $tiempoRestante = isset($_SESSION['tiempoRestante']) ? $_SESSION['tiempoRestante'] : 0;
+
+        header('Content-Type: application/json');
+        echo json_encode(['tiempoRestante' => $tiempoRestante]);
     }
 
     public function mostrarPuntuacion()
