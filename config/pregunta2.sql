@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 17-10-2023 a las 22:45:22
+-- Servidor: localhost:3306
+-- Tiempo de generación: 30-10-2023 a las 13:09:50
 -- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.0.28
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,6 +45,60 @@ INSERT INTO `preguntas` (`Pregunta_ID`, `Pregunta_texto`, `Tematica_ID`, `Dificu
 (2, '¿Quién fue el primer presidente de Estados Unidos?', 2, 'Medio', 15, 0),
 (3, '¿Cuál es el símbolo químico del oxígeno?', 3, 'Difícil', 20, 0),
 (4, '¿Cuál es la capital de Francia?', 4, 'Fácil', 10, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `preguntas_reportadas`
+--
+
+CREATE TABLE `preguntas_reportadas` (
+  `id_pregunta_reportada` int(11) NOT NULL,
+  `motivo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `preguntas_reportadas`
+--
+
+INSERT INTO `preguntas_reportadas` (`id_pregunta_reportada`, `motivo`) VALUES
+(1, ''),
+(3, ''),
+(4, ''),
+(3, ''),
+(2, ''),
+(2, '');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `preguntas_sugeridas`
+--
+
+CREATE TABLE `preguntas_sugeridas` (
+  `pregunta` varchar(255) NOT NULL,
+  `respuesta_correcta` varchar(255) NOT NULL,
+  `primera_respuesta_incorrecta` varchar(255) NOT NULL,
+  `segunda_respuesta_incorrecta` varchar(255) NOT NULL,
+  `tercera_respuesta_incorrecta` varchar(255) NOT NULL,
+  `aprobada` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `preguntas_sugeridas`
+--
+
+INSERT INTO `preguntas_sugeridas` (`pregunta`, `respuesta_correcta`, `primera_respuesta_incorrecta`, `segunda_respuesta_incorrecta`, `tercera_respuesta_incorrecta`, `aprobada`) VALUES
+('¿Cuál es el planeta más grande del sistema solar?', 'Júpiter', 'Marte', 'Venus', 'Saturno', 0),
+('¿Cuál es el río más largo del mundo?', 'El río Amazonas', 'El río Nilo', 'El río Misisipi', 'El río Yangtsé', 0),
+('', '', '', '', '', 0),
+('hola!', 'asd', 'asd', 'asd', 'asd', 0),
+('hola!', 'asd', 'asd', 'asd', 'asasd', 0),
+('hola!', 'asd', 'asd', 'asd', 'asasd', 0),
+('hola!', 'asd', 'asd', 'asd', 'asd', 0),
+('aaa', 'a', 'b', 'c', 'd', 0),
+('aaa', 'a', 'b', 'c', 'd', 0),
+('pregunta 1', 'nose', 'si se', 'si se pero xd', 'BOOOOOOCAAAA', 0);
 
 -- --------------------------------------------------------
 
@@ -132,7 +186,7 @@ CREATE TABLE `usuarios` (
 INSERT INTO `usuarios` (`id`, `nombre_completo`, `ano_nacimiento`, `sexo`, `pais`, `ciudad`, `correo_electronico`, `contrasena`, `nombre_usuario`, `foto_perfil`, `puntuacion_actual`, `puntuacion_masalta`, `activo`, `fecha_registro`) VALUES
 (1, 'Shushu', '0000-00-00', 'Masculino', 'Argentina', 'Buenos Aires', 'ashfa@gmail.com', 'test1', '123456', '', 0, 0, 0, '2023-10-09 16:51:43'),
 (2, 'Usuario Test', '0000-00-00', '', 'Argentina', 'Villa Luzuriaga', 'test@test.com', '123456', 'test', '', 0, 0, 0, '2023-10-09 17:13:47'),
-(3, 'Ain Ponce', '1995-08-09', 'Masculino', 'Argentina', 'Buenos Aires', 'ponce.ain@gmail.com', '123456', 'ainponce', '', 0, 0, 0, '2023-10-09 17:53:18');
+(3, 'Ain Ponce', '1995-08-09', 'Masculino', 'Argentina', 'Buenos Aires', 'ponce.ain@gmail.com', '123456', 'ainponce', '', 0, 2, 0, '2023-10-09 17:53:18');
 
 --
 -- Índices para tablas volcadas
