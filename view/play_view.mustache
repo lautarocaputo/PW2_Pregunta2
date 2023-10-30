@@ -14,6 +14,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Pregunta</h3>
                             <p class="card-text">{{Pregunta_texto}}</p>
+                            <p class="card-text">Dificultad de la pregunta: {{Dificultad}}</p>
                                 <form action="/play/enviarPreguntaReportada?preguntaID={{Pregunta_ID}}" method="POST">
                                     <button type="submit" class="btn btn-danger mt-3">Reportar Pregunta</button>
                             </form>

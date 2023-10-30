@@ -28,7 +28,11 @@
                             {{position}}
                         </td>
                         <td>
-                            {{nombre_completo}}
+                             <a href="javascript:void(0);" class="profile-link" data-nombre="{{nombre_completo}}" onclick="submitProfile(this)">
+                                {{nombre_completo}}
+                            </a>
+                </a>
+            </form>
                         </td>
                         <td>
                             {{puntuacion_masAlta}}
@@ -42,18 +46,18 @@
         <h2>¡Podés sugerirnos preguntas!</h2>
         <form action="/home/enviarPreguntaSugerida" method="post">
             <label for="pregunta">Pregunta:</label>
-            <input type="text" id="pregunta" name="pregunta" required><br>
+            <input type="text" id="pregunta" name="pregunta" required ><br>
 
-            <label for="correcta">Pregunta Correcta:</label>
+            <label for="correcta">Respuesta Correcta:</label>
             <input type="text" id="correcta" name="correcta" required><br>
 
-            <label for="incorrecta1">Pregunta Incorrecta 1:</label>
+            <label for="incorrecta1">Respuesta Incorrecta 1:</label>
             <input type="text" id="incorrecta1" name="incorrecta1" required><br>
 
-            <label for="incorrecta2">Pregunta Incorrecta 2:</label>
+            <label for="incorrecta2">Respuesta Incorrecta 2:</label>
             <input type="text" id="incorrecta2" name="incorrecta2" required><br>
 
-            <label for="incorrecta3">Pregunta Incorrecta 3:</label>
+            <label for="incorrecta3">Respuesta Incorrecta 3:</label>
             <input type="text" id="incorrecta3" name="incorrecta3" required><br>
 
             <input type="submit" class="btn btn-primary mt-3" value="Enviar">
@@ -84,5 +88,22 @@
             }
         });
     });
+
+
+    function submitProfile(link) {
+    var profileName = link.getAttribute('data-nombre');
+    var form = document.createElement('form');
+    form.action = '/profile/buscarPerfil';
+    form.method = 'post';
+    var input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'usuario';
+    input.value = profileName;
+    form.appendChild(input);
+    document.body.appendChild(form);
+    form.submit();
+}
+
+
 </script>
 </body>

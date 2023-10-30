@@ -1,5 +1,6 @@
 <?php
-class PlayController {
+class PlayController
+{
     private $playModel;
     private $renderer;
 
@@ -7,6 +8,7 @@ class PlayController {
     {
         $this->playModel = $playModel;
         $this->renderer = $renderer;
+        $_SESSION['tiempoRestante'];
     }
 
     public function index()
@@ -22,12 +24,18 @@ class PlayController {
             return;
         }
 
-        $pregunta = $this->playModel->getPreguntaRandom();
+        $usuario = $_SESSION['actualUser'];
+        $dificultadParaElUsuario = $this->playModel->calcularDificultadUsuario($usuario);
 
-        if (!$pregunta) {
-            $this->terminarPartida();
+        try {
+            $pregunta = $this->playModel->getPreguntaRandom($dificultadParaElUsuario);
+        } catch (Exception $e) {
+            $mensaje = $e->getMessage();
+            $this->terminarPartidaConMensaje($mensaje);
             return;
         }
+
+
 
         $tematica = $pregunta['Tematica_ID'];
         $respuestas = $this->playModel->getRespuestas($tematica);
@@ -50,7 +58,7 @@ class PlayController {
             $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.']);
             return;
         }
-
+        $usuario = $_SESSION['actualUser'];
         $respuestaID = $_POST['respuestaID'];
         $preguntaID = $_GET['preguntaID'];
         $model = $this->playModel;
@@ -60,8 +68,14 @@ class PlayController {
         $respuestaCorrecta = $model->validarRespuesta($respuestaID);
 
         if (!$respuestaCorrecta) {
+            $this->playModel->incrementarContadorRespuestasIncorrectas($usuario, $preguntaID);
+            $this->playModel->calcularDificultadPregunta($preguntaID);
+            $this->playModel->calcularDificultadUsuario($usuario);
             $this->terminarPartida();
         } else {
+            $this->playModel->incrementarContadorRespuestasCorrectas($usuario, $preguntaID);
+            $this->playModel->calcularDificultadPregunta($preguntaID);
+            $this->playModel->calcularDificultadUsuario($usuario);
             $_SESSION['puntaje'] += 1;
             $puntajeEnPartida = $_SESSION['puntaje'];
             $this->playModel->guardarPuntaje($_SESSION['actualUser'], $puntajeEnPartida);
@@ -86,6 +100,25 @@ class PlayController {
         $this->playModel->marcarPreguntasUtilizadas();
 
         $this->renderer->render('perdiste', ['puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
+    }
+
+    public function terminarPartidaConMensaje($mensaje)
+    {
+        $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);
+        $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
+
+        if ($puntajeActual > $puntajeMasAlto) {
+            $this->playModel->actualizarPuntajeMasAlto($_SESSION['actualUser'], $puntajeActual);
+        }
+
+        $this->playModel->guardarPuntaje($_SESSION['actualUser'], 0);
+        $_SESSION['puntaje'] = 0;
+        $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
+        $_SESSION['puntajeMasAlto'] = $puntajeMasAlto;
+
+        $this->playModel->marcarPreguntasUtilizadas();
+
+        $this->renderer->render('perdiste', ['error_msg' => $mensaje,'puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
     }
 
     public function getTiempoRestante()
