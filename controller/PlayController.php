@@ -96,6 +96,14 @@ class PlayController {
         echo json_encode(['tiempoRestante' => $tiempoRestante]);
     }
 
+    public function enviarPreguntaReportada()
+    {
+        $preguntaID = isset($_GET['preguntaID']) ? $_GET['preguntaID'] : 0;
+
+        $this->playModel->reportQuestion($preguntaID);
+        $this->renderer->render('reportedQuestion');
+    }
+
     public function mostrarPuntuacion()
     {
         $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);

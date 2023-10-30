@@ -37,6 +37,29 @@
                 {{/rankingScore}}
                 </tbody>
             </table>
+
+               <div>
+        <h2>¡Podés sugerirnos preguntas!</h2>
+        <form action="/home/enviarPreguntaSugerida" method="post">
+            <label for="pregunta">Pregunta:</label>
+            <input type="text" id="pregunta" name="pregunta" required><br>
+
+            <label for="correcta">Pregunta Correcta:</label>
+            <input type="text" id="correcta" name="correcta" required><br>
+
+            <label for="incorrecta1">Pregunta Incorrecta 1:</label>
+            <input type="text" id="incorrecta1" name="incorrecta1" required><br>
+
+            <label for="incorrecta2">Pregunta Incorrecta 2:</label>
+            <input type="text" id="incorrecta2" name="incorrecta2" required><br>
+
+            <label for="incorrecta3">Pregunta Incorrecta 3:</label>
+            <input type="text" id="incorrecta3" name="incorrecta3" required><br>
+
+            <input type="submit" class="btn btn-primary mt-3" value="Enviar">
+        </form>
+
+    </div>
         </div>
     </div>
 </div>

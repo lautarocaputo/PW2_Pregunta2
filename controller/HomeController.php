@@ -28,4 +28,18 @@ class HomeController
 
         $this->renderer->render('home', $data);
     }
+
+    public function enviarPreguntaSugerida()
+    {
+        $pregunta = isset($_POST['pregunta']) ? $_POST['pregunta'] : '';
+        $preguntaCorrecta = isset($_POST['correcta']) ? $_POST['correcta'] : '';
+        $primeraPreguntaIncorrecta = isset($_POST['incorrecta1']) ? $_POST['incorrecta1'] : '';
+        $segundaPreguntaIncorrecta = isset($_POST['incorrecta2']) ? $_POST['incorrecta2'] : '';
+        $terceraPreguntaIncorrecta = isset($_POST['incorrecta3']) ? $_POST['incorrecta3'] : '';
+
+
+        $this->homeModel->sendSuggestedQuestion($pregunta, $preguntaCorrecta, $primeraPreguntaIncorrecta, $segundaPreguntaIncorrecta, $terceraPreguntaIncorrecta);
+        $this->renderer->render('suggestedQuestion', $data);
+
+    }
 }

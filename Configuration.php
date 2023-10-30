@@ -12,12 +12,14 @@ include_once ('controller/LogOutController.php');
 include_once ('controller/RegisterController.php');
 include_once ('controller/PlayController.php');
 include_once ('controller/ProfileController.php');
+include_once ('controller/EditorController.php');
 
 include_once ('model/HomeModel.php');
 include_once ('model/LoginModel.php');
 include_once ('model/RegisterModel.php');
-include_once('model/PlayModel.php');
+include_once ('model/PlayModel.php');
 include_once ('model/ProfileModel.php');
+include_once ('model/EditorModel.php');
 
 
 class Configuration {
@@ -77,6 +79,12 @@ class Configuration {
     {
         $model = new ProfileModel($this->getDatabase());
         return new ProfileController($model, $this->getRenderer());
+    }
+
+    public function getEditorController()
+    {
+        $model = new EditorModel($this->getDatabase());
+        return new EditorController($model, $this->getRenderer());
     }
 
     public function getRouter() {

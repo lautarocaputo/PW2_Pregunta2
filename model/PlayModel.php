@@ -77,4 +77,9 @@ class playModel
         $this->database->query($sql);
     }
 
+    public function reportQuestion($preguntaID) {
+         $query = "INSERT INTO preguntas_reportadas (id_pregunta_reportada) VALUES($preguntaID);";
+        return $this->database->insert($query);
+    }    
+
 }

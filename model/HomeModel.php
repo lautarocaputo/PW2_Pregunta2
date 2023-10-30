@@ -25,6 +25,12 @@ class HomeModel
         return $user;
     }
 
+    public function sendSuggestedQuestion($pregunta, $preguntaCorrecta, $primeraPreguntaIncorrecta, $segundaPreguntaIncorrecta, $terceraPreguntaIncorrecta) {
+        $query = "INSERT INTO preguntas_sugeridas (pregunta, respuesta_correcta, primera_respuesta_incorrecta, segunda_respuesta_incorrecta, tercera_respuesta_incorrecta)
+        VALUES('$pregunta', '$preguntaCorrecta', '$primeraPreguntaIncorrecta', '$segundaPreguntaIncorrecta', '$terceraPreguntaIncorrecta');";
+        return $this->database->insert($query);
+    }    
+
     public function resetearPuntaje($userID)
     {
         $sql = "UPDATE usuarios SET puntuacion_actual = 0 WHERE id = $userID";
