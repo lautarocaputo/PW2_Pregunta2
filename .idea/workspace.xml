@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a307a88c-3252-488f-82bd-4e3306089b49" name="Changes" comment="Iniciar Sesion Andando">
-      <change afterPath="$PROJECT_DIR$/public/js/AjaxPartida.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/log-2023-11-02.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/PlayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/PlayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/log-2023-10-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log/log-2023-10-29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/play_view.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/view/play_view.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,9 @@
       <workItem from="1698079652810" duration="5178000" />
       <workItem from="1698089509511" duration="791000" />
       <workItem from="1698524654035" duration="690000" />
-      <workItem from="1698534273157" duration="13282000" />
+      <workItem from="1698534273157" duration="13909000" />
+      <workItem from="1698679014949" duration="1163000" />
+      <workItem from="1698889370104" duration="770000" />
     </task>
     <servers />
   </component>

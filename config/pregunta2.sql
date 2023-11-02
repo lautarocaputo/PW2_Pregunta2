@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-10-2023 a las 21:10:01
+-- Tiempo de generación: 02-11-2023 a las 03:00:47
 -- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Versión de PHP: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,22 +42,22 @@ CREATE TABLE `preguntas` (
 --
 
 INSERT INTO `preguntas` (`Pregunta_ID`, `Pregunta_texto`, `Tematica_ID`, `Dificultad`, `Utilizada`, `contador_respuestas_correctas`, `contador_respuestas_incorrectas`) VALUES
-(1, '¿Cuál es el resultado de 2 + 2?', 1, 'Facil', 0, 22, 1),
-(2, '¿Quién fue el primer presidente de Estados Unidos?', 2, 'Facil', 0, 19, 8),
+(1, '¿Cuál es el resultado de 2 + 2?', 1, 'Facil', 0, 23, 1),
+(2, '¿Quién fue el primer presidente de Estados Unidos?', 2, 'Facil', 0, 20, 8),
 (3, '¿Cuál es el símbolo químico del oxígeno?', 3, 'Facil', 0, 25, 1),
-(4, '¿Cuál es la capital de Francia?', 4, 'Facil', 0, 24, 3),
-(9, '¿Cuanto es 15 multiplicado por 4?', 5, 'Medio', 0, 7, 1),
+(4, '¿Cuál es la capital de Francia?', 4, 'Facil', 0, 24, 4),
+(9, '¿Cuanto es 15 multiplicado por 4?', 5, 'Medio', 0, 8, 1),
 (10, '¿En qué año se fundó la ONU?', 6, 'Dificil', 0, 5, 4),
 (11, '¿Cuál es el símbolo químico del agua?', 7, 'Facil', 0, 7, 1),
-(12, '¿En qué continente se encuentra Egipto?', 8, 'Medio', 0, 4, 2),
-(13, '¿Cuál es la raíz cuadrada de 25?', 9, 'Facil', 0, 0, 0),
+(12, '¿En qué continente se encuentra Egipto?', 8, 'Medio', 0, 5, 2),
+(13, '¿Cuál es la raíz cuadrada de 25?', 9, 'Facil', 0, 1, 0),
 (14, '¿Quién escribió la Declaración de Independencia de los Estados Unidos?', 10, 'Medio', 0, 0, 0),
-(15, '¿Cuál es el número atómico del carbono?', 11, 'Dificil', 0, 0, 4),
-(16, '¿Cuál es el río más largo del mundo?', 12, 'Facil', 0, 0, 0),
+(15, '¿Cuál es el número atómico del carbono?', 11, 'Dificil', 0, 1, 4),
+(16, '¿Cuál es el río más largo del mundo?', 12, 'Facil', 0, 1, 0),
 (17, '¿Cuánto es 12 dividido por 4?', 13, 'Facil', 0, 0, 0),
-(18, '¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?', 14, 'Medio', 0, 0, 0),
-(19, '¿Cuál es el símbolo químico del sodio?', 15, 'Dificil', 0, 0, 2),
-(20, '¿Cuál es la montaña más alta del mundo?', 16, 'Facil', 0, 0, 0);
+(18, '¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?', 14, 'Medio', 0, 0, 1),
+(19, '¿Cuál es el símbolo químico del sodio?', 15, 'Dificil', 0, 1, 2),
+(20, '¿Cuál es la montaña más alta del mundo?', 16, 'Facil', 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -80,7 +80,8 @@ INSERT INTO `preguntas_reportadas` (`id_pregunta_reportada`, `motivo`) VALUES
 (4, ''),
 (3, ''),
 (2, ''),
-(2, '');
+(2, ''),
+(14, '');
 
 -- --------------------------------------------------------
 
@@ -103,7 +104,8 @@ CREATE TABLE `preguntas_sugeridas` (
 
 INSERT INTO `preguntas_sugeridas` (`pregunta`, `respuesta_correcta`, `primera_respuesta_incorrecta`, `segunda_respuesta_incorrecta`, `tercera_respuesta_incorrecta`, `aprobada`) VALUES
 ('¿Cuál es el planeta más grande del sistema solar?', 'Júpiter', 'Marte', 'Venus', 'Saturno', 0),
-('¿Cuál es el río más largo del mundo?', 'El río Amazonas', 'El río Nilo', 'El río Misisipi', 'El río Yangtsé', 0);
+('¿Cuál es el río más largo del mundo?', 'El río Amazonas', 'El río Nilo', 'El río Misisipi', 'El río Yangtsé', 0),
+('quien es el mascapito?', 'alan', 'ain', 'lautoro', 'guido', 0);
 
 -- --------------------------------------------------------
 
@@ -244,20 +246,21 @@ CREATE TABLE `usuarios` (
   `fecha_registro` timestamp NOT NULL DEFAULT current_timestamp(),
   `contador_respuestas_correctas` int(11) NOT NULL DEFAULT 0,
   `contador_respuestas_incorrectas` int(11) NOT NULL DEFAULT 0,
-  `nivel` varchar(32) NOT NULL
+  `nivel` varchar(32) NOT NULL,
+  `rol` varchar(1) NOT NULL DEFAULT 'u'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre_completo`, `ano_nacimiento`, `sexo`, `pais`, `ciudad`, `correo_electronico`, `contrasena`, `nombre_usuario`, `foto_perfil`, `puntuacion_actual`, `puntuacion_masalta`, `activo`, `fecha_registro`, `contador_respuestas_correctas`, `contador_respuestas_incorrectas`, `nivel`) VALUES
-(1, 'Shushu', '0000-00-00', 'Masculino', 'Argentina', 'Buenos Aires', 'ashfa@gmail.com', 'test1', '123456', '', 0, 0, 0, '2023-10-09 16:51:43', 0, 0, 'Principiante'),
-(2, 'Usuario Test', '0000-00-00', '', 'Argentina', 'Villa Luzuriaga', 'test@test.com', '123456', 'test', '', 0, 0, 0, '2023-10-09 17:13:47', 0, 0, 'Principiante'),
-(3, 'Ain Ponce', '1995-08-09', 'Masculino', 'Argentina', 'Buenos Aires', 'ponce.ain@gmail.com', '123456', 'ainponce', '', 0, 0, 0, '2023-10-09 17:53:18', 0, 0, 'Principiante'),
-(4, 'asd', '4222-03-12', 'Masculino', 'asd', 'asd', 'lautaro0611@gmail.com', 'asd', 'asd', '', 0, 8, 0, '2023-10-28 15:27:50', 11, 8, 'Intermedio'),
-(6, '123', '3222-03-12', 'Masculino', '123', '123', '123@123.com', '123', '123', '', 0, 0, 0, '2023-10-28 15:49:20', 0, 0, 'Principiante'),
-(7, 'aaa', '1232-03-12', 'Masculino', 'aa', 'aa', 'aa@aa.com', 'aaa', 'aaa', '', 0, 0, 0, '2023-10-28 16:29:59', 0, 0, 'Principiante');
+INSERT INTO `usuarios` (`id`, `nombre_completo`, `ano_nacimiento`, `sexo`, `pais`, `ciudad`, `correo_electronico`, `contrasena`, `nombre_usuario`, `foto_perfil`, `puntuacion_actual`, `puntuacion_masalta`, `activo`, `fecha_registro`, `contador_respuestas_correctas`, `contador_respuestas_incorrectas`, `nivel`, `rol`) VALUES
+(1, 'Shushu', '0000-00-00', 'Masculino', 'Argentina', 'Buenos Aires', 'ashfa@gmail.com', 'test1', '123456', '', 0, 0, 0, '2023-10-09 16:51:43', 0, 0, 'Principiante', 'u'),
+(2, 'Usuario Test', '0000-00-00', '', 'Argentina', 'Villa Luzuriaga', 'test@test.com', '123456', 'test', '', 0, 0, 0, '2023-10-09 17:13:47', 0, 0, 'Principiante', 'u'),
+(3, 'Ain Ponce', '1995-08-09', 'Masculino', 'Argentina', 'Buenos Aires', 'ponce.ain@gmail.com', '123456', 'ainponce', '', 0, 9, 0, '2023-10-09 17:53:18', 0, 1, 'Principiante', 'e'),
+(4, 'asd', '4222-03-12', 'Masculino', 'asd', 'asd', 'lautaro0611@gmail.com', 'asd', 'asd', '', 0, 8, 0, '2023-10-28 15:27:50', 11, 8, 'Intermedio', 'a'),
+(6, '123', '3222-03-12', 'Masculino', '123', '123', '123@123.com', '123', '123', '', 0, 0, 0, '2023-10-28 15:49:20', 0, 0, 'Principiante', 'u'),
+(7, 'aaa', '1232-03-12', 'Masculino', 'aa', 'aa', 'aa@aa.com', 'aaa', 'aaa', '', 0, 0, 0, '2023-10-28 16:29:59', 0, 0, 'Principiante', 'u');
 
 --
 -- Índices para tablas volcadas

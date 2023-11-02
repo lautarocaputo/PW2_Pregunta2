@@ -8,7 +8,7 @@ class PlayController
     {
         $this->playModel = $playModel;
         $this->renderer = $renderer;
-        $_SESSION['tiempoRestante'];
+        $_SESSION['tiempoRestante'] = 10;
     }
 
     public function index()
