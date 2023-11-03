@@ -118,7 +118,7 @@ class PlayController
 
         $this->playModel->marcarPreguntasUtilizadas();
 
-        $this->renderer->render('perdiste', ['error_msg' => $mensaje,'puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
+        $this->renderer->render('perdiste', ['error_msg' => $mensaje, 'puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
     }
 
     public function getTiempoRestante()

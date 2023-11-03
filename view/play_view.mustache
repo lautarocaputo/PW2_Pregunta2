@@ -3,12 +3,12 @@
 <div class="container">
     <div class="text-center">
         <div class="text-center">
-            <h1 class="mt-5">Arranca el Pregunta2</h1>
+            <h1 class="py-4">Arranca el Pregunta2</h1>
             <p>Temporizador: <span id="temporizador">{{tiempoRestante}}</span> segundos</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 py-4">
              {{#pregunta}}
                     <div class="card mt-3">
                         <div class="card-body">
@@ -34,7 +34,8 @@
                         </label>
                     </div>
                 {{/respuestas}}
-                <button type="submit" id="enviarBtn" class="btn btn-primary mt-3">Enviar</button>
+                <input type="submit" class="btn btn-light mt-3 btn-outline-secondary" value="Enviar" style="padding: 8px 20px;">
+
             </form>
         </div>
         </div>
@@ -42,14 +43,18 @@
     </div>
 </div>
 </div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<script src="../public/js/AjaxPartida.js"></script>
+
+
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         iniciarTemporizador();
     });
 </script>
+
+<script src="../public/js/AjaxPartida.js"></script>
+
+
+</body>
+{{> footer}} 

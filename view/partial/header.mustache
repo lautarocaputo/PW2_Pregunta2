@@ -8,32 +8,59 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../public/css/style.css">
+
 <body>
 
-<div class="w3-top">
-    <div style="background: black; color: white; display: flex; flex-direction: row; justify-content: space-between">
-        <div style="width: 100%; display: flex">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-               href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                    class="fa fa-bars"></i></a>
-            <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
-            <a href="/play/jugar" class="w3-bar-item w3-button w3-padding-large">Jugar</a>
+<nav class="navbar navbar-expand-lg bg-secondary text-white">
+  <div class="container-fluid">
 
-            <div class="buscador">
-                <form action="/profile/buscarPerfil" method="POST">
-                    <input class="form-control" type="text" name="usuario" placeholder="Buscar usuario">
-                </form>
-            </div>
-        </div>
 
-        
-        <a href="/editor/list" class="w3-bar-item w3-button w3-padding-large">Panel admin</a>
-        <a href="/profile/perfil" class="w3-bar-item w3-button w3-padding-large">Perfil</a>
-        <a href="/logout/logout" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cerrar Sesión</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ml-auto me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a href="/" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/play/jugar" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Jugar</a>
+        </li>
+        <li class="nav-item">
+          <a href="/profile/perfil" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a href="/editor/editor" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Panel admin</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search" action="/profile/buscarPerfil" method="POST">
+        <input class="form-control me-2" type="search" placeholder="Buscar usuario" aria-label="Search" name="usuario">
+     
+      </form>
+      <a href="/logout/logout" class="nav-link active text-white text-decoration-none fs-5 px-4" aria-current="page">Cerrar Sesión</a>
     </div>
-</div>
+  </div>
+</nav>
 
-<div class="w3-content" style="max-width:2000px;margin-top:46px;">
+
+
+<style>
+
+  .nav-link:hover {
+    color: black !important;
+  }
+
+  button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+</style>
