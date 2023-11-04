@@ -1,5 +1,4 @@
 <?php
-
 class LoginController
 {
     private $loginModel;
@@ -27,6 +26,9 @@ class LoginController
 
         if (!empty($usuario)) {
             $_SESSION['actualUser'] = $idUsuario;
+            if($usuario[0]['rol'] === 'e'){
+                $_SESSION['esEditor'] = true;
+            }
             header('location: /');
             exit();
         } else {

@@ -33,4 +33,8 @@ class Database {
     public function update($sql){
         return mysqli_query($this->conn, $sql);
     }
+
+    public function delete($sql){
+        return mysqli_query($this->conn, $sql);
+    }
 }

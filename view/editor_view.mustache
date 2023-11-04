@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col-md-6">
             <h2>Preguntas Sugeridas</h2>
+            <form action="/editor/aprobarPregunta" method="post">
             <table class="table">
                 <thead> <!-- Agrega una fila de encabezado -->
                     <tr>
@@ -29,6 +30,9 @@
                 {{#suggestedQuestion}}
                     <tr>
                         <td>
+                            <input type="checkbox" name="pregunta_id[]" value="{{id}}">
+                        </td>
+                        <td>
                             {{pregunta}}
                         </td>
                         <td>
@@ -47,6 +51,8 @@
                 {{/suggestedQuestion}}
                 </tbody>
             </table>
+                <button type="submit" name="action" value="aprobar">Aprobar</button> <!-- Botón para aprobar preguntas -->
+            </form>
         </div>
     </div>
 

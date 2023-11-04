@@ -37,7 +37,7 @@ class PlayController
 
 
 
-        $tematica = $pregunta['Tematica_ID'];
+        $tematica = $pregunta['Pregunta_ID'];
         $respuestas = $this->playModel->getRespuestas($tematica);
         shuffle($respuestas);
 

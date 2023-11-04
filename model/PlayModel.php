@@ -36,9 +36,9 @@ class playModel
 
     }
 
-    public function getRespuestas($tematica)
+    public function getRespuestas($pregunta)
     {
-        $sql = "SELECT * FROM Respuestas WHERE Tematica_ID = $tematica ORDER BY RAND()";
+        $sql = "SELECT * FROM Respuesta WHERE Pregunta_ID = $pregunta ORDER BY RAND()";
         return $this->database->query($sql);
     }
 
@@ -50,7 +50,7 @@ class playModel
 
     public function validarRespuesta($respuestaID)
     {
-        $sql = "SELECT * FROM respuestas WHERE Respuesta_ID = $respuestaID AND Correcta = 1";
+        $sql = "SELECT * FROM respuesta WHERE Respuesta_ID = $respuestaID AND Correcta = 1";
         $respuesta = $this->database->query($sql);
 
         if (isset($respuesta[0])) {
