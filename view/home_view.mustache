@@ -8,8 +8,8 @@
             {{#user}}
             <div class=" text-white bg-tertiary mb-3 w-auto">
                 <div class="card-body text-center text-secondary">
-                    <h2>¡Bienvenido <strong>{{nombre_completo}}</strong>!</h2>
-                    <p >Su puntuación más alta es: {{puntuacion_masalta}}</p>
+                    <h2>¡Bienvenido <strong>{{nombre_completo}}</strong>!</h2> 
+                    <h4>Su puntuación más alta es: <span class="text-success">{{puntuacion_masalta}}</span></h4>
                 </div>
             </div>
             {{/user}}
@@ -34,7 +34,7 @@
                             {{position}}
                         </td>
                         <td>
-                            <a href="javascript:void(0);" style="text-decoration:none;"class="profile-link text-secondary" data-nombre="{{nombre_completo}}" onclick="submitProfile(this)">
+                            <a href="javascript:void(0);" style="text-decoration:none;"class="profile-link text-primary" data-nombre="{{nombre_completo}}" onclick="submitProfile(this)">
                                 {{nombre_completo}}
                             </a>
                         </td>
@@ -47,30 +47,30 @@
             </table>
         </div>
 
-        <div class="col-md-6 py-3">
+        <div class="col-md-6 py-2">
             <h2 class="text-center py-3">¡Podés sugerirnos preguntas!</h2>
             <form action="/home/enviarPreguntaSugerida" method="post">
-                <div class="form-group pt-1">
+                <div class="form-group">
                     <label for="pregunta">Pregunta:</label>
                     <input type="text" id="pregunta" name="pregunta" class="form-control" required>
                 </div>
 
-                <div class="form-group pt-1">
+                <div class="form-group">
                     <label for="correcta">Respuesta correcta:</label>
-                    <input type="text" id="correcta" name "correcta" class="form-control" required>
+                    <input type="text" id="correcta" name="correcta" class="form-control" required>
                 </div>
 
-                <div class="form-group pt-1">
+                <div class="form-group">
                     <label for="incorrecta1">Respuesta incorrecta 1:</label>
                     <input type="text" id="incorrecta1" name="incorrecta1" class="form-control" required>
                 </div>
 
-                <div class="form-group pt-1">
+                <div class="form-group">
                     <label for="incorrecta2">Respuesta incorrecta 2:</label>
                     <input type="text" id="incorrecta2" name="incorrecta2" class="form-control" required>
                 </div>
 
-                <div class="form-group pt-1">
+                <div class="form-group">
                     <label for="incorrecta3">Respuesta incorrecta 3:</label>
                     <input type="text" id="incorrecta3" name="incorrecta3" class="form-control" required>
                 </div>

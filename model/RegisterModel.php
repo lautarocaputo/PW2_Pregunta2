@@ -27,10 +27,10 @@ class RegisterModel
         return $this->database->query($query);
     }
 
-    public function register($name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username, $foto_perfil,$lat,$long)
+    public function register($name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username,$lat,$long)
     {
-        $query = "INSERT INTO usuarios(nombre_completo, ano_nacimiento, sexo, pais, ciudad, correo_electronico, contrasena, nombre_usuario, foto_perfil, activo,latitud,longitud) 
-                  VALUES('$name', '$fecha_nacimiento', '$sexo', '$pais', '$ciudad', '$email', '$password', '$username', '$foto_perfil', 'true',$lat,$long)";
+        $query = "INSERT INTO usuarios(nombre_completo, ano_nacimiento, sexo, pais, ciudad, correo_electronico, contrasena, nombre_usuario,  activo,latitud,longitud) 
+                  VALUES('$name', '$fecha_nacimiento', '$sexo', '$pais', '$ciudad', '$email', '$password', '$username', 'true',$lat,$long)";
         return $this->database->insert($query);
     }
 

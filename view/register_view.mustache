@@ -7,78 +7,85 @@
     <link rel="icon" href="../public/assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="d-flex align-items-center">
 <div class="container">
-    <h1 class="mt-5">Registro de Usuario</h1>
-    <form id="registration-form" action="/register/registration" method="post" enctype="multipart/form-data">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre Completo:</label>
-            <input type="text" class="form-control" id="nombre" name="name" required>
-        </div>
-        <div class="mb-3">
-            <label for="fecha_nacimiento" class="form-label">Año de Nacimiento:</label>
-            <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Sexo:</label>
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" id="masculino" name="sexo" value="Masculino">
-                <label class="form-check-label" for="masculino">Masculino</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" id="femenino" name="sexo" value="Femenino">
-                <label class="form-check-label" for="femenino">Femenino</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" id="prefiero_no_decirlo" name="sexo" value="Prefiero no decirlo">
-                <label class="form-check-label" for="prefiero_no_decirlo">Prefiero no decirlo</label>
-            </div>
-        </div>
-        <div class="mb-3">
-            <label for="pais" class="form-label">País:</label>
-            <input type="text" class="form-control" id="pais" name="pais" required>
-        </div>
-        <div class="mb-3">
-            <label for="ciudad" class="form-label">Ciudad:</label>
-            <input type="text" class="form-control" id="ciudad" name="ciudad" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="username" class="form-label">Nombre de Usuario:</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <div class="mb-3">
-            <label for="confirm_password" class="form-label">Repetir Contraseña:</label>
-            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
-        </div>
-        <div class="mb-3">
-            <label for="foto_perfil" class="form-label">Foto de Perfil:</label>
-            <input type="file" class="form-control" id="foto_perfil" name="foto_perfil">
-        </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-secondary">
+            {{#errorUsuarioExistente}}
+                <div class="text-danger text-center alert errorcontainer alert-danger">
+                    <span>
+                        {{.}}
+                    </span>
+                </div>
+            {{/errorUsuarioExistente}}
+            {{#errorEmailExistente}}
+                <div class="text-danger text-center alert errorcontainer alert-danger">
+                    <span>
+                        {{.}}
+                    </span>
+                </div>
+            {{/errorEmailExistente}}
+            <form class="form" action="/register/registration" method="POST">
+            <span class="text-center h1 py-2">Registrarse</span>
 
-        <input type="hidden" id="lat" name="lat">
-        <input type="hidden" id="long" name="long">
-        
-        <button type="submit" class="btn btn-primary">Registrarse</button>
-        <p class="mt-3">¿Ya tienes una cuenta? <a href="/login/login">Inicia sesión</a></p>
-    </form>
+            <div class="row">
+                        {{#errorDatos}}
+                            <div class="text-danger text-center alert errorcontainer alert-danger">
+                                <span>
+                                    {{.}}
+                                </span>
+                            </div>
+                        {{/errorDatos}}
+                <div class="col-md-6">
 
-    <h4>
-        {{
-        errorEmailExistente
-        }}
-        {{
-        errorUsuarioExistente
-        }}
-    </h4>
+                    <label for="name" class="label">Nombre completo</label>
+                    <input type="text" id="name" name="name" required="" class="input">
+
+                    <label for="username" class="label" id="username" name="username" required>Nombre de usuario</label>
+                    <input type="text" id="username" name="username" required="" class="input">
+                        
+                    <label for="email" class="label" id="email" name="email" required>Email</label>
+                    <input type="email" id="email" name="email" required="" class="input">
+                        
+                    <label for="password" class="label">Contraseña</label>
+                    <input type="password" id="password" name="password" required="" class="input">
+                        
+                    <label for="passwordConfirm" class="label">Confirmar contraseña</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" required="" class="input">
+
+                    
+                </div>
+            
+                <div class="col-md-6">
+
+                    <label for="fecha_nacimiento" class="label">Fecha de nacimiento</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required="" class="input">
+
+                    <label for="sexo" class="label">Género</label>
+                    <select id="sexo" name="sexo" required="" class="input">
+                        <option selected disabled>Selecciona...</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="indefinido">Prefiero no decirlo</option>
+                    </select>
+
+                    <label for="pais" class="label">País</label>
+                    <input type="text" id="pais" name="pais" required="" class="input">
+
+                    <label for="ciudad" class="label">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" required="" class="input">
+                </div>
+
+                    <input type="hidden" id="lat" name="lat">
+                    <input type="hidden" id="long" name="long">
+            </div>
+                <button type="submit" class="btn btn-light btn-outline-secondary">Registrarse</button>
+                <p class="mt-3 text-center text-secondary">¿Ya tenés una cuenta? <a href="/login/login" style="text-decoration:none;">Iniciar sesión</a></p>
+        </form>  
+        </div>
+    </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script>
@@ -87,5 +94,64 @@
         document.getElementById('long').value = position.coords.longitude;
     });
 </script>
+
+<style>
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.errorcontainer{
+     max-width: 500px
+}
+
+.form {
+  max-width: 500px;
+  max-height: 650px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 0px 4px rgba(52, 52, 53, 0.185);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a202c;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1rem;
+  color: #4a5568;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #cbd5e0;
+}
+
+.input:valid {
+  border: 1px solid #007bff;
+}
+
+.input:invalid {
+  border: 1px solid rgba(14, 14, 14, 0.205);
+}
+
+</style>
+
 </body>
 </html>
