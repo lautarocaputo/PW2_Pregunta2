@@ -8,7 +8,6 @@ class PlayController
     {
         $this->playModel = $playModel;
         $this->renderer = $renderer;
-        $_SESSION['tiempoRestante'] = 10;
     }
 
     public function index()
@@ -19,24 +18,31 @@ class PlayController
 
     public function jugar()
     {
-        if (!isset($_SESSION['tiempoRestante']) || $_SESSION['tiempoRestante'] <= 0) {
+        $tiempoRestante = isset($_SESSION['tiempoRestante']) ? $_SESSION['tiempoRestante'] : 10;
+
+        if ($tiempoRestante <= 0) {
             $this->terminarPartida();
             return;
         }
 
-        $usuario = $_SESSION['actualUser'];
-        $dificultadParaElUsuario = $this->playModel->calcularDificultadUsuario($usuario);
+        if (!isset($_SESSION['preguntaActual'])) {
+            $usuario = $_SESSION['actualUser'];
+            $dificultadParaElUsuario = $this->playModel->calcularDificultadUsuario($usuario);
 
-        try {
-            $pregunta = $this->playModel->getPreguntaRandom($dificultadParaElUsuario);
-        } catch (Exception $e) {
-            $mensaje = $e->getMessage();
-            $this->terminarPartidaConMensaje($mensaje);
-            return;
+            try {
+                $pregunta = $this->playModel->getPreguntaRandom($dificultadParaElUsuario);
+                $_SESSION['preguntaActual'] = $pregunta;
+            } catch (Exception $e) {
+                $mensaje = $e->getMessage();
+                $this->terminarPartidaConMensaje($mensaje);
+                return;
+            }
         }
 
+        $_SESSION['tiempoRestante'] = $tiempoRestante;
 
-
+        // Obtén la pregunta actual de la sesión
+        $pregunta = $_SESSION['preguntaActual'];
         $tematica = $pregunta['Pregunta_ID'];
         $respuestas = $this->playModel->getRespuestas($tematica);
         shuffle($respuestas);
@@ -46,11 +52,13 @@ class PlayController
             'respuestas' => $respuestas,
             'puntaje' => $_SESSION['puntaje'],
             'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto']),
-            'tiempoRestante' => $_SESSION['tiempoRestante'] = 10,
+            'tiempoRestante' => $tiempoRestante,
         ];
 
         $this->renderer->render('play', $data);
     }
+
+
 
     public function validarRespuesta()
     {
@@ -58,6 +66,11 @@ class PlayController
             $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.']);
             return;
         }
+
+        $_SESSION['tiempoRestante'] = 10;
+
+        unset($_SESSION['preguntaActual']);
+
         $usuario = $_SESSION['actualUser'];
         $respuestaID = $_POST['respuestaID'];
         $preguntaID = $_GET['preguntaID'];
