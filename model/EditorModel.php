@@ -30,6 +30,11 @@ class EditorModel
          }
     }
 
+    public function denegarPregunta($pregunta_id){
+        $query = "DELETE FROM preguntas_sugeridas WHERE id = $pregunta_id";
+        return $this->database->delete($query);
+    }
+
     public function insertQuestionAroved($pregunta_id){
         $query = "INSERT INTO preguntas(Pregunta_texto) SELECT pregunta FROM preguntas_sugeridas WHERE id = $pregunta_id";
         return $this->database->insert($query);

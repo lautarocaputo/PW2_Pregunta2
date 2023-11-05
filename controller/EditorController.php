@@ -19,14 +19,20 @@ class EditorController
         $this->renderer->render('editor', $data);
     }
 
-    public function aprobarPregunta(){
+    public function aprobarODenegarPregunta(){
         if(isset($_POST['pregunta_id'])){
-            foreach ($_POST['pregunta_id'] as $pregunta_id){
-                $this->editorModel->aprobarPregunta($pregunta_id);
+            if($_POST['action'] === 'aprobar'){
+                foreach ($_POST['pregunta_id'] as $pregunta_id){
+                    $this->editorModel->aprobarPregunta($pregunta_id);
+                }
+            }elseif ($_POST['action'] === 'denegar'){
+                foreach ($_POST['pregunta_id'] as $pregunta_id){
+                    $this->editorModel->denegarPregunta($pregunta_id);
+                }
             }
-            $data["suggestedQuestion"] = $this->editorModel->getSuggestedQuestion();
-            $data["reportedQuestions"] = $this->editorModel->getReportedQuestionWithQuestion();
-            $this->renderer->render('editor', $data);
         }
+        $data["suggestedQuestion"] = $this->editorModel->getSuggestedQuestion();
+        $data["reportedQuestions"] = $this->editorModel->getReportedQuestionWithQuestion();
+        $this->renderer->render('editor', $data);
     }
 }
