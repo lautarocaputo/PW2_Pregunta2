@@ -3,12 +3,12 @@
 <div class="container">
     <div class="text-center">
         <div class="text-center">
-            <h1 class="py-4">Arranca el Pregunta2</h1>
-            <p>Temporizador: <span id="temporizador">{{tiempoRestante}}</span> segundos</p>
+            <h1 class="mb-2 mt-3 py-4 text-center text-light bg-secondary border rounded" >¡Contestá la pregunta!</h1>
+            <p>Tiempo restante: <span id="temporizador" class="text-danger">{{tiempoRestante}}</span> segundos</p>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 py-4">
+        <div class="col-md-12">
              {{#pregunta}}
                     <div class="card mt-3">
                         <div class="card-body">
@@ -44,17 +44,13 @@
 </div>
 </div>
 
-
-
-
-<script>
+{{!<script>
     document.addEventListener("DOMContentLoaded", function () {
         iniciarTemporizador();
     });
-</script>
+</script>}}
 
 <script src="../public/js/AjaxPartida.js"></script>
 
 
-</body>
 {{> footer}} 

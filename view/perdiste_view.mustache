@@ -1,13 +1,11 @@
 {{> header}}
-<html class="home">
-<body>
-<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
     <div class="text-center">
-        <h1>{{error_msg}}</h1>
-        <h2>Tu Puntaje Actual: {{puntaje}}</h2>
-        <h2>Tu Puntuacion Mas Alta: {{puntajeMasAlto}}</h2>
-        <a href="/inicio" class="btn btn-primary mt-3">Volver al Inicio</a>
+        <h1 class="display-4 text-danger">{{error_msg}}</h1>
+        <h2 class="my-4">Tu puntaje actual: <span class="text-primary">{{puntaje}}</span></h2>
+        <h4>Tu puntuación mas alta: <span class="text-success">{{puntajeMasAlto}}</span></h4>
+        <a href="/" class="btn btn-secondary mt-3 btn-lg">Volver al inicio</a>
     </div>
 </div>
-</body>
-</html>
+

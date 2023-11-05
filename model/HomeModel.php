@@ -26,10 +26,12 @@ class HomeModel
     }
 
     public function sendSuggestedQuestion($pregunta, $preguntaCorrecta, $primeraPreguntaIncorrecta, $segundaPreguntaIncorrecta, $terceraPreguntaIncorrecta) {
-        $query = "INSERT INTO preguntas_sugeridas (pregunta, respuesta_correcta, primera_respuesta_incorrecta, segunda_respuesta_incorrecta, tercera_respuesta_incorrecta)
-        VALUES('$pregunta', '$preguntaCorrecta', '$primeraPreguntaIncorrecta', '$segundaPreguntaIncorrecta', '$terceraPreguntaIncorrecta');";
-        return $this->database->insert($query);
-    }    
+        if(!empty($pregunta) && !empty($preguntaCorrecta) && !empty($primeraPreguntaIncorrecta) && !empty($segundaPreguntaIncorrecta) && !empty($terceraPreguntaIncorrecta)) {
+            $query = "INSERT INTO preguntas_sugeridas (pregunta, respuesta_correcta, primera_respuesta_incorrecta, segunda_respuesta_incorrecta, tercera_respuesta_incorrecta)
+            VALUES('$pregunta', '$preguntaCorrecta', '$primeraPreguntaIncorrecta', '$segundaPreguntaIncorrecta', '$terceraPreguntaIncorrecta');";
+            $this->database->insert($query);
+        }
+    }
 
     public function resetearPuntaje($userID)
     {
