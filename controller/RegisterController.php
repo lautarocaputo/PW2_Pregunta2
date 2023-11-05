@@ -25,6 +25,8 @@ class RegisterController{
         $username = $_POST['username'];
         $password = $_POST['password'];
         $foto_perfil = $_POST['foto_perfil'];
+        $latitud = $_POST['lat'];
+        $longitud = $_POST['long'];
         $existe = false;
 
         $userExistente = $this->registerModel->checkUser($username);
@@ -40,9 +42,14 @@ class RegisterController{
             $existe = true;
         }
         if($existe===false){
-            $this->registerModel->register($name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username, $foto_perfil);
+            $this->registerModel->register($name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username, $foto_perfil,$latitud,$longitud);
+            $this->mailBienvenida($email,$name);
             header('location: /home');
             exit();
         }
+    }
+
+    public function mailBienvenida($mail,$nombreUsuario){
+        $this->registerModel->mailBienvenida($mail,$nombreUsuario);
     }
 }

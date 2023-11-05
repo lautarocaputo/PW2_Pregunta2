@@ -20,4 +20,9 @@ class LoginModel
         return $this->database->update($query);
     }
 
+    public function actualizarCoordenadas($latitud,$longitud,$idUsuario){
+        $query = "UPDATE usuarios SET latitud = '$latitud', longitud = '$longitud' WHERE id = '$idUsuario'";
+        return $this->database->update($query);
+    }
+
 }

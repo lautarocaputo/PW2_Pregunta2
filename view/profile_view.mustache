@@ -1,64 +1,77 @@
 {{> header}}
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRQcjmA2pluizgW0Gez4MZOnMGfW5YBPk"></script>
+
+<script src="../public/js/map.js"></script>
+
+{{! {{#api_key}}
+{{! <script src="https://maps.googleapis.com/maps/api/js?key={{key}" ></script>
+{{!{{/api_key}}
+
 {{#user}}
     <div class="container">
         <h1 class="mb-2 mt-3 py-4 text-center text-light bg-secondary border rounded" >Perfil</h1>
         <div class="row py-4">
             <div class="col-md-6">
-                <div class="form-group py-1">
+                <div class="form-group pt-2">
                     <label for="nombreCompleto"><strong>Nombre Completo</strong></label>
                     <p id="nombreCompleto" class="border-bottom">{{nombre_completo}}</p>
                 </div>
-                <div class="form-group py-1">
+                <div class="form-group pt-2">
                     <label for="nombreCompleto"><strong>Nivel de juego</strong></label>
                     <p id="nivel" class="border-bottom">{{nivel}}</p>
                 </div>
-                <div class="form-group py-1">
+                <div class="form-group pt-2">
                     <label for="anoNacimiento"><strong>Año de Nacimiento</strong></label>
                     <p id="anoNacimiento" class="border-bottom">{{ano_nacimiento}}</p>
                 </div>
-                <div class="form-group py-1">
+                <div class="form-group pt-2">
                 <label for="sexo"><strong>Sexo</strong></label>
                 <p id="sexo" class="border-bottom">{{sexo}}</p>
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="pais"><strong>País</strong></label>
                 <p id="pais" class="border-bottom">{{pais}}</p>
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="ciudad"><strong>Ciudad</strong></label>
                 <p id="ciudad" class="border-bottom">{{ciudad}}</p>
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="correoElectronico"><strong>Correo Electrónico</strong></label>
                 <p id="correoElectronico" class="border-bottom">{{correo_electronico}}</p>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="nombreUsuario"><strong>Nombre de Usuario</strong></label>
                 <p id="nombreUsuario" class="border-bottom">{{nombre_usuario}}</p>
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="fotoPerfil"><strong>Foto de Perfil</strong></label>
                 <img id="fotoPerfil" src="{{foto_perfil}}" alt="Foto de perfil">
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="puntuacionActual"><strong>Puntuación Actual</strong></label>
                 <p id="puntuacionActual" class="border-bottom">{{puntuacion_actual}}</p>
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="puntuacionMaxima"><strong>Puntuación Máxima</strong></label>
                 <p id="puntuacionMaxima" class="border-bottom">{{puntuacion_masalta}}</p>
             </div>
-            <div class="form-group py-1">
+            <div class="form-group pt-2">
                 <label for="fechaRegistro"><strong>Fecha de Registro</strong></label>
                 <p id="fechaRegistro" class="border-bottom">{{fecha_registro}}</p>
+            </div>
+            <div class="form-group pt-2">
+                <label for="ubi"><strong>Última ubicación</strong></label>
+                <div name="{{id}}" id="map"style="width: 500px; height: 150px;"></div>
+                
             </div>
         </div>
     </div>
 </div>
 {{/user}}
-</body>
+
 {{> footer}} 
 
-</html>

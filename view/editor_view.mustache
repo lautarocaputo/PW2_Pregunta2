@@ -4,32 +4,32 @@
     <h1 class="text-center mb-4 mt-3 py-4 text-center bg-secondary border rounded text-light">Panel de editor</h1>
     <div class="row">
         <div class="col-md-6">
-            <h3 class="mb-3">Preguntas Sugeridas</h3>
+            <h3 class="mb-3 text-center pb-2">Preguntas Sugeridas</h3>
             <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
                         <th>Pregunta</th>
-                        <th class="text-success">Respuesta correcta</th>
-                        <th class="text-danger">Respuesta incorrecta 1</th>
-                        <th class="text-danger">Respuesta incorrecta 2</th>
-                        <th class="text-danger">Respuesta incorrecta 3</th>
+                        <th class="text-success text-center">Respuesta correcta</th>
+                        <th class="text-danger text-center">Respuesta incorrecta 1</th>
+                        <th class="text-danger text-center">Respuesta incorrecta 2</th>
+                        <th class="text-danger text-center">Respuesta incorrecta 3</th>
                     </tr>
                 </thead>
                 <tbody>
                 {{#suggestedQuestion}}
                     <tr>
                         <td>{{pregunta}}</td>
-                        <td>{{respuesta_correcta}}</td>
-                        <td>{{primera_respuesta_incorrecta}}</td>
-                        <td>{{segunda_respuesta_incorrecta}}</td>
-                        <td>{{tercera_respuesta_incorrecta}}</td>
+                        <td class="text-center">{{respuesta_correcta}}</td>
+                        <td class="text-center">{{primera_respuesta_incorrecta}}</td>
+                        <td class="text-center">{{segunda_respuesta_incorrecta}}</td>
+                        <td class="text-center">{{tercera_respuesta_incorrecta}}</td>
                     </tr>
                 {{/suggestedQuestion}}
                 </tbody>
             </table>
         </div>
         <div class="col-md-6">
-            <h3 class="mb-3">Preguntas Reportadas</h3>
+            <h3 class="mb-3 text-center pb-2">Preguntas Reportadas</h3>
             <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>

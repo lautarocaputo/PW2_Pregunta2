@@ -27,4 +27,19 @@ class ProfileModel
             return false;
         }
     }
+
+    public function getLatitud($idUser)
+    {
+        $sql = "SELECT latitud FROM usuarios WHERE id = '$idUser'";
+        $latitud = $this->database->query($sql);
+        return $latitud[0];
+    }
+
+    public function getLongitud($idUser)
+    {
+        $sql = "SELECT longitud FROM usuarios WHERE id = '$idUser'";
+        $longitud = $this->database->query($sql);
+        return $longitud[0];
+    }
+
 }

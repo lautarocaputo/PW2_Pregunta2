@@ -26,7 +26,14 @@ class LoginController
         $usuarioVerificado = $usuario[0]['esta_verificado'] ?? "";
 
         if (!empty($usuario)) {
+
+            $lat = $_POST['lat'];
+            $long = $_POST['long'];
+
+            $this->loginModel->actualizarCoordenadas($lat, $long, $idUsuario);
+
             $_SESSION['actualUser'] = $idUsuario;
+
             header('location: /');
             exit();
         } else {
