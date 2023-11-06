@@ -13,6 +13,7 @@ include_once ('controller/RegisterController.php');
 include_once ('controller/PlayController.php');
 include_once ('controller/ProfileController.php');
 include_once ('controller/EditorController.php');
+include_once ('controller/AdminController.php');
 
 include_once ('model/HomeModel.php');
 include_once ('model/LoginModel.php');
@@ -20,6 +21,7 @@ include_once ('model/RegisterModel.php');
 include_once ('model/PlayModel.php');
 include_once ('model/ProfileModel.php');
 include_once ('model/EditorModel.php');
+include_once ('model/AdminModel.php');
 
 
 class Configuration {
@@ -87,7 +89,13 @@ class Configuration {
         return new EditorController($model, $this->getRenderer());
     }
 
+    public function getAdminController(){
+        $model = new AdminModel($this->getDatabase());
+        return new AdminController($model, $this->getRenderer());
+    }
+
     public function getRouter() {
         return new Router($this,"getHomeController","list");
     }
+
 }
