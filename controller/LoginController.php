@@ -28,6 +28,8 @@ class LoginController
             $_SESSION['actualUser'] = $idUsuario;
             if($usuario[0]['rol'] === 'e'){
                 $_SESSION['esEditor'] = true;
+            }elseif ($usuario[0]['rol'] === 'a'){
+                $_SESSION['esAdmin'] = true;
             }
             header('location: /');
             exit();

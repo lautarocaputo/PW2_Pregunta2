@@ -22,5 +22,9 @@ if ($module === 'editor' && !$_SESSION['esEditor']){
     header('Location: /');
 }
 
+if ($module === 'admin' && !$_SESSION['esAdmin']){
+    header('Location: /');
+}
+
 
 $router->route($module, $method);
