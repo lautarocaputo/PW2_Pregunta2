@@ -4,6 +4,7 @@ class EditorController
 {
 
     private $renderer;
+    private $editorModel;
 
     public function __construct($editorModel, $renderer)
     {
