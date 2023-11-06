@@ -256,7 +256,9 @@ CREATE TABLE `usuarios` (
   `contador_respuestas_correctas` int(11) NOT NULL DEFAULT 0,
   `contador_respuestas_incorrectas` int(11) NOT NULL DEFAULT 0,
   `nivel` varchar(32) NOT NULL,
-  `rol` varchar(1) NOT NULL DEFAULT 'u'
+  `rol` varchar(1) NOT NULL DEFAULT 'u',
+  `latitud` varchar(100) DEFAULT NULL,
+  `longitud` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

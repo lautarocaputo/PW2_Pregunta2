@@ -1,6 +1,11 @@
 {{> header}}
-<body>
-    <h1>Error 404.</h1>
-    <h2>{{error}}</h2>
-</body>
-</html>
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="text-center">
+        <h1 class="display-4 text-danger">Error 404.</h1>
+        <h2 class="my-4">{{error}}</h2>
+        <a href="/" class="btn btn-primary mt-3">Volver al home</a>
+    </div>
+</div>
+
+{{> footer}} 

@@ -4,7 +4,8 @@ class ProfileModel
 {
     private $database;
 
-    public function __construct($database) {
+    public function __construct($database)
+    {
         $this->database = $database;
     }
 
@@ -17,13 +18,28 @@ class ProfileModel
 
     public function buscarPerfil($usuario)
     {
-        $sql = "SELECT * FROM usuarios WHERE nombre_usuario = '$usuario' OR correo_electronico = '$usuario' OR nombre_completo = '$usuario'";
+        $sql = "SELECT * FROM usuarios WHERE nombre_usuario = '$usuario' OR correo_electronico = '$usuario' OR nombre_completo LIKE '%$usuario%'";
         $user = $this->database->query($sql);
 
-        if($user){
+        if ($user) {
             return $user[0];
-        }else{
+        } else {
             return false;
         }
     }
+
+    public function getLatitud($idUser)
+    {
+        $sql = "SELECT latitud FROM usuarios WHERE id = '$idUser'";
+        $latitud = $this->database->query($sql);
+        return $latitud[0];
+    }
+
+    public function getLongitud($idUser)
+    {
+        $sql = "SELECT longitud FROM usuarios WHERE id = '$idUser'";
+        $longitud = $this->database->query($sql);
+        return $longitud[0];
+    }
+
 }

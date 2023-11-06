@@ -1,12 +1,15 @@
 {{> header}}
-<html class="home">
-<body>
-<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="text-center">
-        <!--agregar una imagen de un tick verde!-->
-        <h2>Tu pregunta fue reportada con exito!</h2>
-        <a href="/inicio" class="btn btn-primary mt-3">Volver al Inicio</a>
+
+<div class="container d-flex justify-content-center align-items-center flex-column">
+    <div class="container-fluid text-center">
+        <div class="alert alert-success" role="alert">
+            <h1 class="alert-heading">¡Gracias!</h1>
+            <h3>La pregunta fue reportada con éxito</h3>
+            <p>Los administradores se encargarán de revisarla.</p>
+        </div>
+        <a href="/" class="btn btn-secondary mt-3">Volver al inicio</a>
     </div>
 </div>
-</body>
-</html>
+
+{{> footer}} 
+
