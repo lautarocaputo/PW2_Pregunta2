@@ -41,6 +41,10 @@
                 <label for="correoElectronico"><strong>Correo Electrónico</strong></label>
                 <p id="correoElectronico" class="border-bottom">{{correo_electronico}}</p>
             </div>
+            <div class="form-group pt-2">
+                <label><strong>¡Escaneame para ir al perfil!</strong></label> <br>
+                <img class="qr" src="/public/qr.php?id={{id}}" />
+            </div>
         </div>
         <div class="col-md-6">
             <div class="form-group pt-2">
@@ -66,7 +70,6 @@
             <div class="form-group pt-2">
                 <label for="ubi"><strong>Última ubicación</strong></label>
                 <div name="{{id}}" id="map"style="width: 500px; height: 150px;"></div>
-                
             </div>
         </div>
     </div>

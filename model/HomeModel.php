@@ -20,7 +20,7 @@ class HomeModel
     }
         
     public function getUserWithHighestScore($idUser) {
-        $sql = "SELECT puntuacion_masAlta, nombre_completo FROM usuarios ORDER BY puntuacion_masAlta DESC";
+        $sql = "SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC";
         $user = $this->database->query($sql);
         return $user;
     }
