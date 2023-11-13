@@ -18,7 +18,7 @@ class PlayController
 
     public function jugar()
     {
-        $tiempoRestante = isset($_SESSION['tiempoRestante']) ? $_SESSION['tiempoRestante'] : 10;
+         $tiempoRestante = $_SESSION['tiempoRestante'] = 10;
 
         if ($tiempoRestante <= 0) {
             $this->terminarPartida();
@@ -39,9 +39,6 @@ class PlayController
             }
         }
 
-        $_SESSION['tiempoRestante'] = $tiempoRestante;
-
-        // Obtén la pregunta actual de la sesión
         $pregunta = $_SESSION['preguntaActual'];
         $tematica = $pregunta['Tematica_ID'];
         $respuestas = $this->playModel->getRespuestas($tematica);
@@ -58,16 +55,15 @@ class PlayController
         $this->renderer->render('play', $data);
     }
 
-
-
     public function validarRespuesta()
     {
+        $_SESSION['tiempoRestante'] = 10;
+
         if (!isset($_POST['respuestaID'])) {
             $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.']);
             return;
         }
 
-        $_SESSION['tiempoRestante'] = 10;
 
         unset($_SESSION['preguntaActual']);
 
@@ -98,6 +94,8 @@ class PlayController
 
     public function terminarPartida()
     {
+        $_SESSION['tiempoRestante'] = 10;
+
         $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);
         $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
 
@@ -117,6 +115,8 @@ class PlayController
 
     public function terminarPartidaConMensaje($mensaje)
     {
+        $_SESSION['tiempoRestante'] = 10;
+
         $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);
         $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
 
@@ -134,16 +134,9 @@ class PlayController
         $this->renderer->render('perdiste', ['error_msg' => $mensaje,'puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
     }
 
-    public function getTiempoRestante()
-    {
-        $tiempoRestante = isset($_SESSION['tiempoRestante']) ? $_SESSION['tiempoRestante'] : 0;
-
-        header('Content-Type: application/json');
-        echo json_encode(['tiempoRestante' => $tiempoRestante]);
-    }
-
     public function enviarPreguntaReportada()
     {
+        $_SESSION['tiempoRestante'] = 10;
         $preguntaID = isset($_GET['preguntaID']) ? $_GET['preguntaID'] : 0;
 
         $this->playModel->reportQuestion($preguntaID);
@@ -152,6 +145,7 @@ class PlayController
 
     public function mostrarPuntuacion()
     {
+        $_SESSION['tiempoRestante'] = 10;
         $puntajeActual = $this->playModel->getPuntajeActual($_SESSION['actualUser']);
         $puntajeMasAlto = $this->playModel->getPuntajeMasAlto($_SESSION['actualUser']);
 

@@ -1,0 +1,7 @@
+[2023-11-06][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-06][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-06][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-06][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-06][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-06][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-06][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
