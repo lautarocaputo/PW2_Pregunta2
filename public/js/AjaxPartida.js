@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function iniciarTemporizador() {
     var temporizador = document.getElementById("temporizador");
-    var tiempo = parseInt(sessionStorage.getItem("tiempoRestante")) || 10;
+    var tiempo = document.getElementById("temporizador").textContent;
 
     temporizador.textContent = tiempo;
 
