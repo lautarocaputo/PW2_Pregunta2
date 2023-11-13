@@ -51,7 +51,6 @@ class PlayController
             'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto']),
             'tiempoRestante' => $tiempoRestante,
         ];
-
         $this->renderer->render('play', $data);
     }
 

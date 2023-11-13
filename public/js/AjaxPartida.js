@@ -13,23 +13,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateButtonState();
+});
 
-    var tiempoRestante = json_encode(tiempoRestante);
-
+function iniciarTemporizador() {
     var temporizador = document.getElementById("temporizador");
-    temporizador.textContent = tiempoRestante;
+    var tiempo = document.getElementById("temporizador").textContent;
+
+    temporizador.textContent = tiempo;
 
     var intervalo = setInterval(function () {
-        tiempoRestante--;
+        tiempo--;
 
-        if (tiempoRestante < 0) {
-            tiempoRestante = 0;
-        }
+        sessionStorage.setItem("tiempoRestante", tiempo);
 
-        temporizador.textContent = tiempoRestante;
+        temporizador.textContent = tiempo;
 
-        if (tiempoRestante === 0) {
+        if (tiempo === 0) {
             clearInterval(intervalo);
+            terminarPartida();
         }
     }, 1000);
-});
+}
+
+
+function terminarPartida() {
+    window.location.href = "/play/mostrarPuntuacion";
+}
