@@ -19,6 +19,14 @@ class HomeController
         $this->homeModel->resetearPuntaje($idUser);
         $data["user"] = $this->homeModel->getUserById($idUser);
         $data["rankingScore"] = $this->homeModel->getUserWithHighestScore($idUser);
+        $usuario = $this->homeModel->getUserById($idUser);
+        if(!Empty($usuario)){
+            if($usuario[0]['rol'] === 'e'){
+            $data['esEditor'] = true;
+        }elseif ($usuario[0]['rol'] === 'a'){
+                $data['esAdmin'] = true;
+            }
+        }
 
         $position = 1;
 

@@ -28,12 +28,12 @@ class LoginController
         if (!empty($usuario)) {
             $_SESSION['actualUser'] = $idUsuario;
             $this->loginModel->actualizarCoordenadas($lat, $long, $idUsuario);
-            if($usuario[0]['rol'] === 'e'){   
+            if($usuario[0]['rol'] === 'e'){
                 $_SESSION['esEditor'] = true;
             }elseif ($usuario[0]['rol'] === 'a'){
                 $_SESSION['esAdmin'] = true;
             }
-            header('location: /');
+            header("Location:/ ");
             exit();
         } else {
             $error['errorDatos'] = "El username o contraseña son incorrectos";

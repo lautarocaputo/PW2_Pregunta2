@@ -35,12 +35,16 @@
         <li class="nav-item">
           <a href="/profile/perfil" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Perfil</a>
         </li>
+          {{#esAdmin}}
         <li class="nav-item">
           <a href="/admin/list" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Panel admin</a>
         </li>
+          {{/esAdmin}}
+          {{#esEditor}}
         <li class="nav-item">
           <a href="/editor/list" class="nav-link active text-white text-decoration-none fs-5" aria-current="page">Panel editor</a>
         </li>
+          {{/esEditor}}
       </ul>
       <form class="d-flex" role="search" action="/profile/buscarPerfil" method="POST">
         <input class="form-control me-2" type="search" placeholder="Buscar usuario" aria-label="Search" name="usuario">

@@ -1,0 +1,164 @@
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '1' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas_sugeridas 
+[2023-11-13][INFO]Ejecutando Query SELECT pr.id_pregunta_reportada, pr.motivo, p.Pregunta_ID, p.Pregunta_texto
+                  FROM preguntas_reportadas pr
+                  LEFT JOIN preguntas p ON pr.id_pregunta_reportada = p.Pregunta_ID 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT rol FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT rol FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas_sugeridas 
+[2023-11-13][INFO]Ejecutando Query SELECT pr.id_pregunta_reportada, pr.motivo, p.Pregunta_ID, p.Pregunta_texto
+                  FROM preguntas_reportadas pr
+                  LEFT JOIN preguntas p ON pr.id_pregunta_reportada = p.Pregunta_ID 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT rol FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT rol FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT rol FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
