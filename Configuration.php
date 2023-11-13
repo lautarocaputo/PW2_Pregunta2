@@ -95,7 +95,7 @@ class Configuration {
     }
 
     public function getRouter() {
-        return new Router($this,"getHomeController","list");
+        return new Router($this,"getHomeController","cargar");
     }
 
 }

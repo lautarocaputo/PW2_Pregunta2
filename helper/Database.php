@@ -10,6 +10,9 @@ class Database {
             Logger::error("Error al ingresar a la base de datos con: $servername, $username, $password, $dbname");
             exit();
         }
+
+        mysqli_set_charset($this->conn, "utf8");
+
     }
 
     public function __destruct() {
@@ -36,5 +39,41 @@ class Database {
 
     public function delete($sql){
         return mysqli_query($this->conn, $sql);
+    }
+
+    public function escape($string) {
+        return mysqli_real_escape_string($this->conn, $string);
+    }
+
+    public function lastError() {
+        return mysqli_error($this->conn);
+    }
+
+    public function begin_transaction() {
+        mysqli_begin_transaction($this->conn);
+    }
+
+    public function commit() {
+        mysqli_commit($this->conn);
+    }
+
+    public function rollback() {
+        mysqli_rollback($this->conn);
+    }
+
+    public function prepare($sql) {
+        return mysqli_prepare($this->conn, $sql);
+    }
+
+    public function bind_param($stmt, $types, ...$params) {
+        return mysqli_stmt_bind_param($stmt, $types, ...$params);
+    }
+
+    public function execute($stmt) {
+        return mysqli_stmt_execute($stmt);
+    }
+
+    public function get_result($stmt) {
+        return mysqli_stmt_get_result($stmt);
     }
 }

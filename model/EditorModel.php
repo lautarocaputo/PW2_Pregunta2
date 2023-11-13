@@ -21,6 +21,53 @@ class EditorModel
         return $this->database->query($query);
     }
 
+    public function getPreguntaPorId($preguntaID){
+        $query = "SELECT * FROM preguntas WHERE Pregunta_ID = $preguntaID";
+        return $this->database->query($query);
+    }
+
+    public function getRespuestasPorIdPregunta($preguntaID){
+        $query = "SELECT r.* FROM respuesta r WHERE r.Pregunta_ID = $preguntaID ORDER BY r.Correcta desc";
+
+        return $this->database->query($query);
+    }
+
+    public function getTematicaPorIdPregunta($preguntaID){
+        $query = "SELECT Tematica_ID FROM preguntas WHERE Pregunta_ID = $preguntaID";
+        return $this->database->query($query); 
+    }
+
+    public function corregirPregunta($idPregunta,$pregunta,$respuesta1,$respuesta2,$respuesta3,$respuesta4){
+
+        $pregunta = $this->database->escape($pregunta);
+        $respuesta1 = $this->database->escape($respuesta1);
+        $respuesta2 = $this->database->escape($respuesta2);
+        $respuesta3 = $this->database->escape($respuesta3);
+        $respuesta4 = $this->database->escape($respuesta4);
+
+
+        $query = "UPDATE `preguntas` SET Pregunta_texto = '$pregunta' WHERE Pregunta_ID = $idPregunta";
+        $this->database->update($query);
+
+        $query = "DELETE FROM `respuesta` WHERE `Pregunta_ID` = '$idPregunta'";
+        $this->database->update($query);
+       
+        $query = "INSERT INTO `respuesta` (`Respuesta_texto`, `Correcta`, `Pregunta_ID`) VALUES ('$respuesta1', '1', '$idPregunta')";
+        $this->database->insert($query);
+        
+        $query = "INSERT INTO `respuesta` (`Respuesta_texto`, `Correcta`, `Pregunta_ID`) VALUES ('$respuesta2', '0', '$idPregunta')";
+        $this->database->insert($query);
+        
+        $query = "INSERT INTO `respuesta` (`Respuesta_texto`, `Correcta`, `Pregunta_ID`) VALUES ('$respuesta3', '0', '$idPregunta')";
+        $this->database->insert($query);
+        
+        $query = "INSERT INTO `respuesta` (`Respuesta_texto`, `Correcta`, `Pregunta_ID`) VALUES ('$respuesta4', '0', '$idPregunta')";
+        $this->database->insert($query);
+
+        $query = "DELETE FROM `preguntas_reportadas` WHERE `id_pregunta_reportada` = '$idPregunta'";
+        $this->database->update($query);
+    }
+    
     public function aprobarPregunta($pregunta_id){
         $query = "UPDATE preguntas_sugeridas SET aprobada = 1 WHERE id = $pregunta_id";
          If($this->database->update($query)){
