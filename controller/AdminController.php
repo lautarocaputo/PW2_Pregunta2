@@ -4,6 +4,7 @@ class AdminController{
 
     private $adminModel;
     private $renderer;
+
     public function __construct($adminModel, $renderer)
     {
         $this->adminModel = $adminModel;
@@ -46,4 +47,5 @@ class AdminController{
             "newUsers"=>$usuariosNuevos);
         $this->renderer->render('admin', $data);
     }
+
 }
