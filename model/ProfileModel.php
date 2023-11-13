@@ -27,7 +27,6 @@ class ProfileModel
             return false;
         }
     }
-
     public function getLatitud($idUser)
     {
         $sql = "SELECT latitud FROM usuarios WHERE id = '$idUser'";

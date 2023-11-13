@@ -43,7 +43,7 @@ class PlayController
 
         // Obtén la pregunta actual de la sesión
         $pregunta = $_SESSION['preguntaActual'];
-        $tematica = $pregunta['Tematica_ID'];
+        $tematica = $pregunta['Pregunta_ID'];
         $respuestas = $this->playModel->getRespuestas($tematica);
         shuffle($respuestas);
 

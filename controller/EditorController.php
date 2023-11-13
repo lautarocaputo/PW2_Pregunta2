@@ -5,6 +5,7 @@ class EditorController
 
     private $renderer;
     private $editorModel;
+    private $editorModel;
 
     public function __construct($editorModel, $renderer)
     {
@@ -45,5 +46,39 @@ class EditorController
         $this->editorModel->corregirPregunta($idPregunta,$pregunta,$respuesta1,$respuesta2,$respuesta3,$respuesta4);
 
         header("Location: /editor/cargar");
+    }
+
+    public function aprobarODenegarPregunta(){
+        if(isset($_POST['pregunta_id'])){
+            if($_POST['action'] === 'aprobar'){
+                foreach ($_POST['pregunta_id'] as $pregunta_id){
+                    $this->editorModel->aprobarPregunta($pregunta_id);
+                }
+            }elseif ($_POST['action'] === 'denegar'){
+                foreach ($_POST['pregunta_id'] as $pregunta_id){
+                    $this->editorModel->denegarPregunta($pregunta_id);
+                }
+            }
+        }
+        $data["suggestedQuestion"] = $this->editorModel->getSuggestedQuestion();
+        $data["reportedQuestions"] = $this->editorModel->getReportedQuestionWithQuestion();
+        $this->renderer->render('editor', $data);
+    }
+
+    public function aprobarODenegarPregunta(){
+        if(isset($_POST['pregunta_id'])){
+            if($_POST['action'] === 'aprobar'){
+                foreach ($_POST['pregunta_id'] as $pregunta_id){
+                    $this->editorModel->aprobarPregunta($pregunta_id);
+                }
+            }elseif ($_POST['action'] === 'denegar'){
+                foreach ($_POST['pregunta_id'] as $pregunta_id){
+                    $this->editorModel->denegarPregunta($pregunta_id);
+                }
+            }
+        }
+        $data["suggestedQuestion"] = $this->editorModel->getSuggestedQuestion();
+        $data["reportedQuestions"] = $this->editorModel->getReportedQuestionWithQuestion();
+        $this->renderer->render('editor', $data);
     }
 }

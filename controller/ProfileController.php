@@ -19,9 +19,14 @@ class ProfileController
 
     public function perfil()
     {
-        $idUser = $_SESSION['actualUser'];
-        $data["user"] = $this->profileModel->getUserById($idUser);
-        $this->renderer->render("profile", $data);
+        if (empty($_GET['idUsuario'])) {
+          $idUser = $_SESSION['actualUser'];
+          $data["user"] = $this->profileModel->getUserById($idUser);
+          $this->renderer->render("profile", $data);
+        } else {
+            $data["user"] = $this->profileModel->getUserById($_GET['idUsuario']);
+            $this->renderer->render("profile", $data);
+        }
     }
 
     public function buscarPerfil()

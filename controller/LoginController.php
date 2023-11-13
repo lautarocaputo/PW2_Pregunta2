@@ -1,5 +1,4 @@
 <?php
-
 class LoginController
 {
     private $loginModel;
@@ -18,22 +17,22 @@ class LoginController
 
     public function ingresarlogin()
     {
-
         $username = $_POST['username'];
         $password = $_POST['password'];
         $usuario = $this->loginModel->getUser($username, $password);
         $idUsuario = $usuario[0]['id'] ?? "";
         $usuarioVerificado = $usuario[0]['esta_verificado'] ?? "";
+        $lat = $_POST['lat'];
+        $long = $_POST['long'];
 
         if (!empty($usuario)) {
-
-            $lat = $_POST['lat'];
-            $long = $_POST['long'];
-
-            $this->loginModel->actualizarCoordenadas($lat, $long, $idUsuario);
-
             $_SESSION['actualUser'] = $idUsuario;
-
+            $this->loginModel->actualizarCoordenadas($lat, $long, $idUsuario);
+            if($usuario[0]['rol'] === 'e'){   
+                $_SESSION['esEditor'] = true;
+            }elseif ($usuario[0]['rol'] === 'a'){
+                $_SESSION['esAdmin'] = true;
+            }
             header('location: /');
             exit();
         } else {

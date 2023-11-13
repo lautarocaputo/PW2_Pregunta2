@@ -5,6 +5,7 @@
     <div class="row">
         <div class="col-md-6">
             <h3 class="mb-3 text-center pb-2">Preguntas Sugeridas</h3>
+                        <form action="/editor/aprobarODenegarPregunta" method="post">
             <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
@@ -18,6 +19,9 @@
                 <tbody>
                 {{#suggestedQuestion}}
                     <tr>
+                        <td>
+                            <input type="checkbox" name="pregunta_id[]" value="{{id}}">
+                        </td>
                         <td>{{pregunta}}</td>
                         <td class="text-center">{{respuesta_correcta}}</td>
                         <td class="text-center">{{primera_respuesta_incorrecta}}</td>
@@ -27,6 +31,9 @@
                 {{/suggestedQuestion}}
                 </tbody>
             </table>
+                <button type="submit" class="btn btn-light mt-3 btn-outline-secondary px-20px" style="padding: 8px 20px;" name="action" value="aprobar">Aprobar</button>
+                <button type="submit" class="btn btn-light mt-3 btn-outline-secondary px-20px" style="padding: 8px 20px;" name="action" value="denegar">Denegar</button>
+            </form>
         </div>
         <div class="col-md-6">
             <h3 class="mb-3 text-center pb-2">Preguntas Reportadas</h3>

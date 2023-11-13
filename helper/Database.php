@@ -37,6 +37,10 @@ class Database {
         return mysqli_query($this->conn, $sql);
     }
 
+    public function delete($sql){
+        return mysqli_query($this->conn, $sql);
+    }
+
     public function escape($string) {
         return mysqli_real_escape_string($this->conn, $string);
     }
