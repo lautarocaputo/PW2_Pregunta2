@@ -1,0 +1,76 @@
+{{> header}}
+
+   <div class="container d-flex justify-content-center">
+    <div class="card mt-5 p-2" style="width: 40rem;">
+        <div class="card-header text-center">
+            <h3>Corregir Pregunta</h3>
+        </div>
+        <div class="card-body">
+            {{#pregunta}}
+                <form method="post" action="/editor/corregirPregunta" class="d-flex flex-column">
+                <input type="hidden" id="id" name="id" value="{{Pregunta_ID}}">
+                <div class="form-group">
+                    <label for="pregunta">Pregunta</label>
+                    <input type="text" class="form-control" id="pregunta" name="pregunta" value="{{Pregunta_texto}}">
+                </div>
+            {{/pregunta}}
+            {{#respuestas.0}}
+                <div class="form-group">
+                    <label for="respuesta1">Respuesta 1 </label>
+                    <input type="text" class="form-control correct" id="respuesta1" name="respuesta1" value="{{Respuesta_texto}}">
+                </div>
+            {{/respuestas.0}}
+            {{#respuestas.1}}
+                <div class="form-group">
+                    <label for="respuesta2">Respuesta 2 </label>
+                    <input type="text" class="form-control incorrect" id="respuesta2" name="respuesta2" value="{{Respuesta_texto}}">
+                </div>
+            {{/respuestas.1}}
+            {{#respuestas.2}}
+                <div class="form-group">
+                    <label for="respuesta3">Respuesta 3</label>
+                    <input type="text" class="form-control incorrect" id="respuesta3" name="respuesta3" value="{{Respuesta_texto}}">
+                </div>
+            {{/respuestas.2}}
+            {{#respuestas.3}}
+                <div class="form-group">
+                    <label for="respuesta4">Respuesta 4</label>
+                    <input type="text" class="form-control incorrect" id="respuesta4" name="respuesta4" value="{{Respuesta_texto}}">
+                </div>
+            {{/respuestas.3}}
+                
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-light mt-3 btn-outline-secondary px-20px">Corregir</button>
+                    <button type="button" onclick="window.history.back();" class="btn btn-light mt-3 btn-outline-secondary px-20px">Volver</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        height: 550px; 
+    }
+
+    .form-group {
+       padding: 10px 0px;
+    }
+
+    label {
+        padding-bottom: 2px;
+    }
+
+    .correct {
+    border-color: green;
+    }
+
+    .incorrect {
+    border-color: red;
+    }
+
+</style>
+
+
+
+{{> footer}} 
