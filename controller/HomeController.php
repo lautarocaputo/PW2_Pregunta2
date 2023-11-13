@@ -12,6 +12,10 @@ class HomeController
         $this->renderer = $renderer;
     }
 
+    public function cargar(){
+        $this->renderer->render('home');
+    }
+
     public function list()
     {
         $idUser = $_SESSION['actualUser'];
@@ -27,7 +31,7 @@ class HomeController
             $position++;
         }
 
-        $this->renderer->render('home', $data);
+       echo json_encode($data);
     }
 
     public function enviarPreguntaSugerida()
