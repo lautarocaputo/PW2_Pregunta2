@@ -1,11 +1,14 @@
 <?php
+
+$_SESSION['puntaje'] = 0;
 session_start();
+
+$_SESSION['puntajeMasAlto'] = 0;
+
 
 include_once("helper/ValidarUsuarioLogeado.php");
 include_once('Configuration.php');
 
-$_SESSION['puntaje'] = 0;
-$_SESSION['puntajeMasAlto'] = 0;
 
 $configuration = new Configuration();
 $router = $configuration->getRouter();

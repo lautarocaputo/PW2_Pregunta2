@@ -75,19 +75,21 @@ class PlayController
 
         $respuestaCorrecta = $model->validarRespuesta($respuestaID);
 
-        if (!$respuestaCorrecta) {
-            $this->playModel->incrementarContadorRespuestasIncorrectas($usuario, $preguntaID);
-            $this->playModel->calcularDificultadPregunta($preguntaID);
-            $this->playModel->calcularDificultadUsuario($usuario);
-            $this->terminarPartida();
-        } else {
+
+        if ($respuestaCorrecta) {
+    
             $this->playModel->incrementarContadorRespuestasCorrectas($usuario, $preguntaID);
             $this->playModel->calcularDificultadPregunta($preguntaID);
             $this->playModel->calcularDificultadUsuario($usuario);
-            $_SESSION['puntaje'] += 1;
+            $_SESSION['puntaje']++;
             $puntajeEnPartida = $_SESSION['puntaje'];
             $this->playModel->guardarPuntaje($_SESSION['actualUser'], $puntajeEnPartida);
             $this->jugar();
+        } else {
+            $this->playModel->incrementarContadorRespuestasIncorrectas($usuario, $preguntaID);
+            $this->playModel->calcularDificultadPregunta($preguntaID);
+            $this->playModel->calcularDificultadUsuario($usuario);
+            $this->terminarPartida();   
         }
     }
 

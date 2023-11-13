@@ -829,3 +829,897 @@
 [2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
 [2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
 [2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '8' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '8' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alancito' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 37 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 320 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 7 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 7 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 208 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 7 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 7 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 7 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alancito' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'arganarazalan603@gmail.com' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alancito' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'arganarazalan603@gmail.com' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alancito' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'arganarazalan612303@gmail.com' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alancito1' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'arganarazalan612303@gmail.com' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alancito1' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 10 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 229 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'Ain Ponce' OR correo_electronico = 'Ain Ponce' OR nombre_completo LIKE '%Ain Ponce%' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'Ain Ponce' OR correo_electronico = 'Ain Ponce' OR nombre_completo LIKE '%Ain Ponce%' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '9' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 29 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 9 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'ainponce' AND contrasena = '123456' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 37 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 318 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 10 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 226 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 4 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 4 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 185 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 4 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 4 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 4 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 1 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 1 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 221 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 219 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 6 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 201 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 6 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 6 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 198 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 6 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 9 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 219 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 9 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 37 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 321 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 13 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 13 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 13 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 247 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 13 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 13 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 13 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas_sugeridas 
+[2023-11-13][INFO]Ejecutando Query SELECT pr.id_pregunta_reportada, pr.motivo, p.Pregunta_ID, p.Pregunta_texto
+                  FROM preguntas_reportadas pr
+                  LEFT JOIN preguntas p ON pr.id_pregunta_reportada = p.Pregunta_ID 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas WHERE Pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT r.* FROM respuesta r WHERE r.Pregunta_ID = 1 ORDER BY r.Correcta desc 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas_sugeridas 
+[2023-11-13][INFO]Ejecutando Query SELECT pr.id_pregunta_reportada, pr.motivo, p.Pregunta_ID, p.Pregunta_texto
+                  FROM preguntas_reportadas pr
+                  LEFT JOIN preguntas p ON pr.id_pregunta_reportada = p.Pregunta_ID 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas_sugeridas 
+[2023-11-13][INFO]Ejecutando Query SELECT pr.id_pregunta_reportada, pr.motivo, p.Pregunta_ID, p.Pregunta_texto
+                  FROM preguntas_reportadas pr
+                  LEFT JOIN preguntas p ON pr.id_pregunta_reportada = p.Pregunta_ID 
+[2023-11-13][INFO]Ejecutando Query SELECT pr.id_pregunta_reportada, pr.motivo, p.Pregunta_ID, p.Pregunta_texto
+                  FROM preguntas_reportadas pr
+                  LEFT JOIN preguntas p ON pr.id_pregunta_reportada = p.Pregunta_ID 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 15 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 261 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 15 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 3 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '3' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alana' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'alana@grava.io' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'alana' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 10 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 10 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 10 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 226 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 11 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 233 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 11 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 16 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 268 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 36 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 311 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 37 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 318 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 1 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 1 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 14 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 256 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM preguntas_sugeridas 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 14 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 254 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 16 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 16 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 16 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 16 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 268 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 8 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 8 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 213 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 8 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 8 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 5 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 5 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 191 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 5 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 5 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 5 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' AND Dificultad = 'Dificil' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 10 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '10' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'uwu' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'alangabriel02@hotmail.com' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'uwu' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '11' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'awa' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE correo_electronico = 'vale.orieta@gmail.com' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE nombre_usuario = 'awa' AND contrasena = '12345' 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 2 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 2 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 2 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 2 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 2 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 2 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 169 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 2 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 2 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 2 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 39 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 39 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 332 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 39 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 39 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 39 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 36 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 311 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 36 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 37 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 318 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 37 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 14 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 254 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 14 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 16 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 1 WHERE Pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM respuesta WHERE Respuesta_ID = 270 AND Correcta = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM preguntas WHERE pregunta_ID = 16 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_actual FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masalta FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query UPDATE Preguntas SET Utilizada = 0 WHERE Utilizada = 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT puntuacion_masAlta, nombre_completo, id FROM usuarios ORDER BY puntuacion_masAlta DESC 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_correctas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT contador_respuestas_incorrectas FROM usuarios WHERE id = 12 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Preguntas WHERE Utilizada = '0' ORDER BY RAND() LIMIT 1 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM Respuesta WHERE Pregunta_ID = 12 ORDER BY RAND() 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT * FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT latitud FROM usuarios WHERE id = '12' 
+[2023-11-13][INFO]Ejecutando Query SELECT longitud FROM usuarios WHERE id = '12' 
