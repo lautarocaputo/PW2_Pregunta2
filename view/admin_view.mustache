@@ -2,8 +2,9 @@
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
+    google.charts.load('current', {'packages':['corechart', 'bar']});
     google.charts.setOnLoadCallback(drawRespuestasCorrectas);
+    google.charts.setOnLoadCallback(drawBasic);
 
     function drawRespuestasCorrectas() {
 
@@ -24,13 +25,69 @@
 
         chart.draw(data, options);
     }
+
+    function drawBasic() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Pais');
+        data.addColumn('number', 'Contador de Usuarios');
+        data.addRows(dataFromPHP);
+
+
+        var options = {
+            title: 'Cantidad de Usuarios por Pais',
+            hAxis: {
+                title: 'Pais'
+            },
+            vAxis: {
+                title: 'Cantidad Usuarios'
+            }
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('cantidadUsuariosPais'));
+
+        chart.draw(data, options);
+    }
+</script>
+<script type="text/javascript">
+    var dataFromPHP = [
+        {{#contadorUsuariosPais}}
+            ['{{pais}}', {{contadorUsuarios}}],
+        {{/contadorUsuariosPais}}
+    ];
 </script>
 
 <div class="container">
     <h2 class="home-title d-flex justify-content-center m-5">Panel de Administrador</h2>
     <div class="row">
-        <div id="respuestasCorrectasPorPregunta" style="width: 900px; height: 500px;"></div>
+        <div class="stats">
+            <h4>Estadisticas</h4>
+            <div class="stat-item">Cantidad de jugadores que tiene el juego: <b> {{CANTIDAD_USUARIOS}} </b></div>
+            <div class="stat-item">Cantidad de partidas jugadas:<b> {{cantidadTotalDePartidasJugadas}} </b></div>
+            <div class="stat-item">Cantidad de preguntas creadas:<b> {{preguntasCreadas}}</b></div>
+            <div class="stat-item">Cantidad de usuarios nuevos: <b>{{newUsers}}</b></div>
+        </div>
+        <div class="col-md-6">
+            <div id="respuestasCorrectasPorPregunta" style="width: 100%; height: 400px;"></div>
+        </div>
+        <div class="col-md-6">
+            <div id="cantidadUsuariosPais" style="width: 100%; height: 400px;"></div>
+        </div>
+        <div class="stats">
+        <button class="btn btn-light mt-3 btn-outline-secondary px-20px" id="download-button">Descargar Gráficos en PDF</button>
+        </div>
     </div>
 </div>
 
 {{> footer}}
+
+<style>
+.stats {
+border-radius: 8px;
+padding: 20px;
+text-align: left;
+}
+.stat-item {
+    margin-bottom: 10px;
+}
+</style>

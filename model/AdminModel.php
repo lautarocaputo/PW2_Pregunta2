@@ -46,4 +46,24 @@ ORDER BY contador_respuestas_correctas DESC
 LIMIT 1 OFFSET 4";
         return $this->database->query($query);
     }
+
+    public function getUsuariosPorPais(){
+        $query = "SELECT COUNT(id) AS contadorUsuarios, pais FROM usuarios GROUP BY pais";
+        return $this->database->query($query);
+    }
+
+    public function getCantidadPartidasJugadas(){
+        $query = "SELECT SUM(contador_respuestas_incorrectas) AS cantidadTotalDePartidasJugadas FROM usuarios";
+        return $this->database->query($query);
+    }
+
+    public function getCantidadPreguntas(){
+        $query = "SELECT COUNT(Pregunta_ID) AS preguntasCreadas FROM preguntas";
+        return $this->database->query($query);
+    }
+
+    public function newUsers(){
+        $query = "SELECT COUNT(id) AS newUsers FROM usuarios WHERE fecha_registro >= CURDATE()";
+        return $this->database->query($query);
+    }
 }
