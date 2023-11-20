@@ -58,8 +58,13 @@ class PlayController
 
     public function validarRespuesta()
     {
-        if (!isset($_POST['respuestaID'])) {
-            $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.']);
+        if (!isset($_POST['respuestaID'])) { 
+            $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.', 'puntaje' => $this->playModel->getPuntajeActual($_SESSION['actualUser']), 'puntajeMasAlto' => $this->playModel->getPuntajeMasAlto($_SESSION['actualUser'])]);
+            return;
+        }
+
+        if (!isset($_SESSION['preguntaActual']) || $_SESSION['preguntaActual']['Pregunta_ID'] !=$_GET['preguntaID']) {
+            $this->terminarPartida();
             return;
         }
 

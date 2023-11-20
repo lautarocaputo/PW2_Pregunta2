@@ -23,7 +23,7 @@
                 <div class="card mt-3">
                 <div class="card-body">
                     <h3>Seleccione Respuesta</h3>
-                <form action="/play/validarRespuesta?preguntaID={{Pregunta_ID}}&puntos={{Puntos}}" method="POST">
+                <form action="/play/validarRespuesta?preguntaID={{Pregunta_ID}}&puntos={{Puntos}}" method="POST" id="formularioPlay"">
                 {{/pregunta}}
                 {{#respuestas}}
                     <div class="radio-container">
@@ -44,6 +44,7 @@
 </div>
 
 <script>
+
     document.addEventListener("DOMContentLoaded", function () {
         iniciarTemporizador();
     });
