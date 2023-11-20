@@ -1,0 +1,102 @@
+{{> header}}
+
+<div class="container d-flex justify-content-center">
+    <div class="card p-3 m-2" style="width: 40rem;">
+        {{#error}}
+            <div class="alert alert-danger text-center" role="alert">
+                {{error}}
+            </div>
+        {{/error}}
+        <div class="card-header text-center">
+            <h3>Editar perfil</h3>
+        </div>
+        <form action="/profile/guardarCambios" method="POST" enctype="multipart/form-data">
+        <div class="row p-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name" class="form-label">Nombre completo</label>
+                    <input type="text" id="name" name="name" required="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="username" class="form-label">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" required="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" required="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" required="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordConfirm" class="form-label">Confirmar contraseña</label>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" required="" class="form-control">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="sexo" class="form-label">Género</label>
+                    <select id="sexo" name="sexo" required="" class="form-select">
+                        <option selected disabled>Selecciona...</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="indefinido">Prefiero no decirlo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais" class="form-label">País</label>
+                    <input type="text" id="pais" name="pais" required="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" required="" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group px-3 d-flex justify-content-between">
+                <button type="submit" class="btn btn-light btn-outline-secondary px-3">Guardar</button>
+                <button type="button" onclick="window.location.href='/profile/perfil';" class="btn btn-light btn-outline-danger px-3">Volver</button>
+            </div>
+        </form>
+            
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        height: 650px; 
+    }
+
+    .form-group {
+       padding: 10px 0px;
+    }
+
+    label {
+        padding-bottom: 2px;
+    }
+
+    .correct {
+    border-color: green;
+    }
+
+    .incorrect {
+    border-color: red;
+    }
+
+</style>
+
+{{> footer}} 

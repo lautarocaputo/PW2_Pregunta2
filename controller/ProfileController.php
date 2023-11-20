@@ -21,7 +21,9 @@ class ProfileController
     {
         if (empty($_GET['idUsuario'])) {
           $idUser = $_SESSION['actualUser'];
-          $data["user"] = $this->profileModel->getUserById($idUser);
+          $data["user"] = $this->profileModel->getUserById($idUser); 
+          $data["isPropioUsuario"] = true;
+
           $this->renderer->render("profile", $data);
         } else {
             $data["user"] = $this->profileModel->getUserById($_GET['idUsuario']);
@@ -51,6 +53,35 @@ class ProfileController
             $coordenadas["longitud"] = $this->profileModel->getLongitud($idUser)["longitud"];
 
             echo json_encode($coordenadas);
+        }
+    }
+
+    public function cargarEditarPerfil(){
+        $this->renderer->render('editarProfile');
+    }
+
+    public function guardarCambios(){
+
+        $data = array();
+    
+        $idUser = $_SESSION['actualUser'];
+        $name = $_POST["name"];
+        $fecha_nacimiento = $_POST["fecha_nacimiento"];
+        $sexo = $_POST["sexo"];
+        $pais = $_POST["pais"];
+        $ciudad = $_POST["ciudad"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+        $passwordConfirm = $_POST["passwordConfirm"];
+        $username = $_POST["username"];
+    
+        if( $password != $passwordConfirm){
+            $data['error']= "Las contraseñas no coinciden";
+            $this->renderer->render('editarProfile', $data);
+            return;
+        } else {
+            $this->profileModel->guardarCambios($idUser, $name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username);
+            header("Location: /profile/perfil");
         }
     }
 }

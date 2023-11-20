@@ -4,10 +4,6 @@
 
 <script src="../public/js/AjaxMap.js"></script>
 
-{{! {{#api_key}}
-{{! <script src="https://maps.googleapis.com/maps/api/js?key={{key}" ></script>
-{{!{{/api_key}}
-
 {{#user}}
     <div class="container">
         <h1 class="mb-2 mt-3 py-4 text-center text-light bg-secondary border rounded" >Perfil</h1>
@@ -68,6 +64,12 @@
                     <div name="{{id}}" id="map"style="width: 500px; height: 150px;"></div>
                 </div>
             </div>
+            
+            {{#isPropioUsuario}}
+                <form method="post" action="/profile/cargarEditarPerfil">
+                    <button type="submit" class="btn btn-light mt-3 btn-outline-secondary px-20px">Editar perfil</button>
+                </form>
+            {{/isPropioUsuario}}
         </div>
 </div>
 {{/user}}
