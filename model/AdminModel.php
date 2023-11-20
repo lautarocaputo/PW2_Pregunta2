@@ -66,4 +66,43 @@ LIMIT 1 OFFSET 4";
         $query = "SELECT COUNT(id) AS newUsers FROM usuarios WHERE fecha_registro >= CURDATE()";
         return $this->database->query($query);
     }
+
+    public function youngUsers(){
+        $query = "SELECT COUNT(id) AS youngUsers FROM usuarios WHERE YEAR(CURDATE()) - YEAR(ano_nacimiento) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(ano_nacimiento, '%m%d')) < 18 AND YEAR(CURDATE()) - YEAR(ano_nacimiento) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(ano_nacimiento, '%m%d')) > 0";
+        return $this->database->query($query);
+    }
+
+    public function adultUsers(){
+        $query = "SELECT COUNT(id) AS adultUsers FROM usuarios WHERE YEAR(CURDATE()) - YEAR(ano_nacimiento) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(ano_nacimiento, '%m%d')) >= 18 AND YEAR(CURDATE()) - YEAR(ano_nacimiento) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(ano_nacimiento, '%m%d')) <= 64";
+        return $this->database->query($query);
+    }
+
+    public function retiredUsers(){
+        $query = "SELECT COUNT(id) AS retiredUsers FROM usuarios WHERE YEAR(CURDATE()) - YEAR(ano_nacimiento) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(ano_nacimiento, '%m%d')) >= 65";
+        return $this->database->query($query);
+    }
+
+    public function newUsersPastWeek(){
+        $query = "SELECT COUNT(id) AS newUsersPastWeek FROM usuarios WHERE YEAR(CURDATE()) = YEAR(fecha_registro) 
+          AND DATE_FORMAT(fecha_registro, '%m%d') 
+              BETWEEN DATE_FORMAT(CURDATE() - INTERVAL 7 DAY, '%m%d') AND DATE_FORMAT(CURDATE(), '%m%d')";
+        return $this->database->query($query);
+    }
+
+    public function newUsersPastMonth(){
+        $query = "SELECT COUNT(id) AS newUsersPastMonth 
+          FROM usuarios 
+          WHERE YEAR(CURDATE()) = YEAR(fecha_registro) 
+          AND MONTH(CURDATE()) = MONTH(fecha_registro)
+          AND fecha_registro >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH)";
+        return $this->database->query($query);
+    }
+
+    public function newUsersPastYear(){
+        $query = "SELECT COUNT(id) AS newUsersPastYear 
+          FROM usuarios 
+          WHERE YEAR(CURDATE()) - YEAR(fecha_registro) = 0
+          AND fecha_registro >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)";
+        return $this->database->query($query);
+    }
 }

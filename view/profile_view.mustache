@@ -45,30 +45,30 @@
                 <label><strong>¡Escaneame para ir al perfil!</strong></label> <br>
                 <img class="qr" src="/public/qr.php?id={{id}}" />
             </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group pt-2">
+                    <label for="nombreUsuario"><strong>Nombre de Usuario</strong></label>
+                    <p id="nombreUsuario" class="border-bottom">{{nombre_usuario}}</p>
+                </div>
+                <div class="form-group pt-2">
+                    <label for="puntuacionActual"><strong>Puntuación Actual</strong></label>
+                    <p id="puntuacionActual" class="border-bottom">{{puntuacion_actual}}</p>
+                </div>
+                <div class="form-group pt-2">
+                    <label for="puntuacionMaxima"><strong>Puntuación Máxima</strong></label>
+                    <p id="puntuacionMaxima" class="border-bottom">{{puntuacion_masalta}}</p>
+                </div>
+                <div class="form-group pt-2">
+                    <label for="fechaRegistro"><strong>Fecha de Registro</strong></label>
+                    <p id="fechaRegistro" class="border-bottom">{{fecha_registro}}</p>
+                </div>
+                <div class="form-group pt-2">
+                    <label for="ubi"><strong>Última ubicación</strong></label>
+                    <div name="{{id}}" id="map"style="width: 500px; height: 150px;"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-            <div class="form-group pt-2">
-                <label for="nombreUsuario"><strong>Nombre de Usuario</strong></label>
-                <p id="nombreUsuario" class="border-bottom">{{nombre_usuario}}</p>
-            </div>
-            <div class="form-group pt-2">
-                <label for="puntuacionActual"><strong>Puntuación Actual</strong></label>
-                <p id="puntuacionActual" class="border-bottom">{{puntuacion_actual}}</p>
-            </div>
-            <div class="form-group pt-2">
-                <label for="puntuacionMaxima"><strong>Puntuación Máxima</strong></label>
-                <p id="puntuacionMaxima" class="border-bottom">{{puntuacion_masalta}}</p>
-            </div>
-            <div class="form-group pt-2">
-                <label for="fechaRegistro"><strong>Fecha de Registro</strong></label>
-                <p id="fechaRegistro" class="border-bottom">{{fecha_registro}}</p>
-            </div>
-            <div class="form-group pt-2">
-                <label for="ubi"><strong>Última ubicación</strong></label>
-                <div name="{{id}}" id="map"style="width: 500px; height: 150px;"></div>
-            </div>
-        </div>
-    </div>
 </div>
 {{/user}}
 

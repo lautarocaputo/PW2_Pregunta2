@@ -12,7 +12,6 @@ class AdminController{
     }
 
     public function list(){
-        //Top 5 preguntas y respuestas
         $preguntaUno = $this->adminModel->getPreguntaTopUno()[0]['pregunta_texto'];
         $respuestasCorrectaUno = $this->adminModel->getPreguntaTopUno()[0]['contador_respuestas_correctas'];
         $preguntaDos = $this->adminModel->getPreguntaTopDos()[0]['pregunta_texto'];
@@ -24,27 +23,31 @@ class AdminController{
         $preguntaCinco = $this->adminModel->getPreguntaTopCinco()[0]['pregunta_texto'];
         $respuestasCorrectaCinco = $this->adminModel->getPreguntaTopCinco()[0]['contador_respuestas_correctas'];
 
-        //Usuarios por pais
         $contadorUsuariosPais = $this->adminModel->getUsuariosPorPais();
 
-        //CantidadUsuarios totales
         $cantidadUsuarios = $this->adminModel->getCantidadUsuarios()[0]['CANTIDAD_USUARIOS'];
 
-        //Partidas Jugadas
         $cantidadPartidasJugadas = $this->adminModel->getCantidadPartidasJugadas()[0]['cantidadTotalDePartidasJugadas'];
 
-        //Preguntas Creadas
         $preguntasCreadas = $this->adminModel->getCantidadPreguntas()[0]['preguntasCreadas'];
 
-        //Usuarios nuevos
         $usuariosNuevos = $this->adminModel->newUsers()[0]['newUsers'];
+
+        $youngUsers = $this->adminModel->youngUsers()[0]['youngUsers'];
+        $adultUsers = $this->adminModel->adultUsers()[0]['adultUsers'];
+        $retiredUsers = $this->adminModel->retiredUsers()[0]['retiredUsers'];
+
+        $newUsersPastWeek = $this->adminModel->newUsersPastWeek()[0]['newUsersPastWeek'];
+        $newUsersPastMonth = $this->adminModel->newUsersPastMonth()[0]['newUsersPastMonth'];
+        $newUsersPastYear = $this->adminModel->newUsersPastYear()[0]['newUsersPastYear'];
 
         $data = array("preguntaUno"=>$preguntaUno, "respuestasCorrectaUno"=>$respuestasCorrectaUno, "preguntaDos"=>$preguntaDos,
             "respuestasCorrectaDos"=>$respuestasCorrectaDos, "preguntaTres"=>$preguntaTres, "respuestasCorrectaTres"=>$respuestasCorrectaTres,
             "preguntaCuatro"=>$preguntaCuatro, "respuestasCorrectaCuatro"=>$respuestasCorrectaCuatro, "preguntaCinco"=>$preguntaCinco,
             "respuestasCorrectaCinco"=>$respuestasCorrectaCinco, "contadorUsuariosPais"=>$contadorUsuariosPais,
             "CANTIDAD_USUARIOS"=>$cantidadUsuarios, "cantidadTotalDePartidasJugadas"=>$cantidadPartidasJugadas, "preguntasCreadas"=>$preguntasCreadas,
-            "newUsers"=>$usuariosNuevos);
+            "newUsers"=>$usuariosNuevos, "youngUsers"=>$youngUsers, "adultUsers"=>$adultUsers, "retiredUsers"=>$retiredUsers, "newUsersPastWeek"=>$newUsersPastWeek,
+            "newUsersPastMonth"=>$newUsersPastMonth, "newUsersPastYear"=>$newUsersPastYear);
         $this->renderer->render('admin', $data);
     }
 
