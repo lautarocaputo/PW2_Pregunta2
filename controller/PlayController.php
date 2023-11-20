@@ -18,6 +18,7 @@ class PlayController
 
     public function jugar()
     {
+
          $tiempoRestante = $_SESSION['tiempoRestante'] = 10;
 
         if ($tiempoRestante <= 0) {
@@ -47,9 +48,11 @@ class PlayController
         $data = [
             'pregunta' => $pregunta,
             'respuestas' => $respuestas,
-            'puntaje' => $_SESSION['puntaje'],
+            'puntaje' => $_SESSION['puntaje'] ?? 0,
             'puntajeMasAlto' => isset($_SESSION['puntajeMasAlto']),
             'tiempoRestante' => $tiempoRestante,
+            'esEditor' => $_SESSION['esEditor'] ?? "",
+            'esAdmin' => $_SESSION['esAdmin'] ?? "",
         ];
         $this->renderer->render('play', $data);
     }

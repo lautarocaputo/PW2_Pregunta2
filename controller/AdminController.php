@@ -11,7 +11,7 @@ class AdminController{
         $this->renderer = $renderer;
     }
 
-    public function list(){
+    public function cargar(){
         $preguntaUno = $this->adminModel->getPreguntaTopUno()[0]['pregunta_texto'];
         $respuestasCorrectaUno = $this->adminModel->getPreguntaTopUno()[0]['contador_respuestas_correctas'];
         $preguntaDos = $this->adminModel->getPreguntaTopDos()[0]['pregunta_texto'];
@@ -47,7 +47,7 @@ class AdminController{
             "respuestasCorrectaCinco"=>$respuestasCorrectaCinco, "contadorUsuariosPais"=>$contadorUsuariosPais,
             "CANTIDAD_USUARIOS"=>$cantidadUsuarios, "cantidadTotalDePartidasJugadas"=>$cantidadPartidasJugadas, "preguntasCreadas"=>$preguntasCreadas,
             "newUsers"=>$usuariosNuevos, "youngUsers"=>$youngUsers, "adultUsers"=>$adultUsers, "retiredUsers"=>$retiredUsers, "newUsersPastWeek"=>$newUsersPastWeek,
-            "newUsersPastMonth"=>$newUsersPastMonth, "newUsersPastYear"=>$newUsersPastYear);
+            "newUsersPastMonth"=>$newUsersPastMonth, "newUsersPastYear"=>$newUsersPastYear, 'esAdmin'=>$_SESSION['esAdmin']);
         $this->renderer->render('admin', $data);
     }
 

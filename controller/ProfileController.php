@@ -23,6 +23,8 @@ class ProfileController
           $idUser = $_SESSION['actualUser'];
           $data["user"] = $this->profileModel->getUserById($idUser); 
           $data["isPropioUsuario"] = true;
+          $data['esEditor'] = $_SESSION['esEditor'] ?? "";
+          $data['esAdmin'] = $_SESSION['esAdmin'] ?? "";
 
           $this->renderer->render("profile", $data);
         } else {

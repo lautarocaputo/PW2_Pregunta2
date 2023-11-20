@@ -14,6 +14,7 @@ class EditorController
 
     public function cargar(){
         $data["suggestedQuestion"] = $this->editorModel->getSuggestedQuestion();
+        $data['esEditor'] = $_SESSION['esEditor'];
         $this->renderer->render('editor', $data);
     }
 

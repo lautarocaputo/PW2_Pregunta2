@@ -13,7 +13,16 @@ class HomeController
     }
 
     public function cargar(){
-        $this->renderer->render('home');
+        $idUser = $_SESSION['actualUser'];
+        $user= $this->homeModel->getUserById($idUser);
+        if(!Empty($user)){
+            if($user[0]['rol'] === 'e'){
+                $data['esEditor'] = $_SESSION['esEditor'];
+            }elseif ($user[0]['rol'] === 'a'){
+                $data['esAdmin'] = $_SESSION['esAdmin'];
+            }
+        }
+        $this->renderer->render('home', $data ?? "");
     }
 
     public function list()
