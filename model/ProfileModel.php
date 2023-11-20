@@ -41,4 +41,14 @@ class ProfileModel
         return $longitud[0];
     }
 
+
+    public function guardarCambios($idUser, $name, $fecha_nacimiento, $sexo, $pais, $ciudad, $email, $password, $username)
+    {
+        if($idUser != null && $name != null && $fecha_nacimiento != null && $sexo != null && $pais != null && $ciudad != null && $email != null && $password != null && $username != null){
+            
+            $sql = "UPDATE usuarios SET nombre_completo = '$name', ano_nacimiento = '$fecha_nacimiento', sexo = '$sexo', pais = '$pais', ciudad = '$ciudad', correo_electronico = '$email', contrasena = '$password', nombre_usuario = '$username' WHERE id = '$idUser'";
+            $this->database->query($sql);
+        }
+        
+    }
 }
