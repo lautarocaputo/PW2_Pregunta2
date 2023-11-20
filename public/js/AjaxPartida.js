@@ -13,18 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateButtonState();
+
+    var tiempoRestante = parseInt(localStorage.getItem("tiempoRestante")) || 10;
+
+    enviarTiempoRestanteAlServidor(tiempoRestante);
 });
 
 function iniciarTemporizador() {
     var temporizador = document.getElementById("temporizador");
-    var tiempo = document.getElementById("temporizador").textContent;
+    var tiempo = parseInt(localStorage.getItem("tiempoRestante")) || 10;
 
     temporizador.textContent = tiempo;
 
     var intervalo = setInterval(function () {
         tiempo--;
 
-        sessionStorage.setItem("tiempoRestante", tiempo);
+        localStorage.setItem("tiempoRestante", tiempo);
 
         temporizador.textContent = tiempo;
 
@@ -35,7 +39,29 @@ function iniciarTemporizador() {
     }, 1000);
 }
 
-
 function terminarPartida() {
     window.location.href = "/play/mostrarPuntuacion";
+}
+
+function enviarTiempoRestanteAlServidor(tiempoRestante) {
+    fetch("/play/setTiempoRestante", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ tiempoRestante: tiempoRestante }),
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al actualizar el tiempo restante');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Manejar la respuesta si es necesario
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error.message);
+        });
 }
