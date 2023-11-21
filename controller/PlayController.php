@@ -120,6 +120,9 @@ class PlayController
             $this->playModel->incrementarContadorRespuestasCorrectas($usuario, $preguntaID);
             $this->playModel->calcularDificultadPregunta($preguntaID);
             $this->playModel->calcularDificultadUsuario($usuario);
+            if (!isset($_SESSION['puntaje'])) {
+                $_SESSION['puntaje'] = 0;
+            }
             $_SESSION['puntaje']++;
             $puntajeEnPartida = $_SESSION['puntaje'];
             $this->playModel->guardarPuntaje($_SESSION['actualUser'], $puntajeEnPartida);
