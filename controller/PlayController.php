@@ -1,4 +1,33 @@
 <?php
+
+class Timer
+{
+    private $start_time = null;
+    private $end_time = null;
+
+    public function start()
+    {
+        $this->start_time = microtime(true);
+    }
+
+    public function stop()
+    {
+        $this->end_time = microtime(true);
+    }
+
+    public function getElapsedTime()
+    {
+        if ($this->start_time === null) {
+            throw new Exception('You must start the timer before getting the elapsed time');
+        }
+
+        $end_time = $this->end_time !== null ? $this->end_time : microtime(true);
+
+        return $end_time - $this->start_time;
+    }
+}
+
+
 class PlayController
 {
     private $playModel;
@@ -18,6 +47,7 @@ class PlayController
 
     public function jugar()
     {
+
         $tiempoRestante = isset($_SESSION['tiempoRestante']) ? $_SESSION['tiempoRestante'] : 10;
 
         if ($tiempoRestante <= 0) {
@@ -54,10 +84,17 @@ class PlayController
             'esAdmin' => $_SESSION['esAdmin'] ?? "",
         ];
         $this->renderer->render('play', $data);
+
     }
 
     public function validarRespuesta()
     {
+
+        if(!$this->validarTiempoPregunta($_SESSION['horaDeArranque'])){
+            $this->terminarPartida();
+            return;
+        }
+
         if (!isset($_POST['respuestaID'])) { 
             $this->renderer->render('perdiste', ['error_msg' => 'Tienes que seleccionar una respuesta.', 'puntaje' => $this->playModel->getPuntajeActual($_SESSION['actualUser']), 'puntajeMasAlto' => $this->playModel->getPuntajeMasAlto($_SESSION['actualUser'])]);
             return;
@@ -168,5 +205,28 @@ class PlayController
         $this->playModel->marcarPreguntasUtilizadas();
 
         $this->renderer->render('perdiste', ['puntaje' => $puntajeActual, 'puntajeMasAlto' => $puntajeMasAlto]);
+    }
+
+    public function validarTiempoPregunta($horaDeArranque){
+        
+
+        date_default_timezone_set('America/Argentina/Buenos_Aires');
+        $horaActual = date("Y-m-d H:i:s");
+
+        $startTimestamp = strtotime($horaDeArranque);
+        $currentTimestamp = strtotime($horaActual);
+ 
+        $diferenciaEnSegundos = $currentTimestamp - $startTimestamp;
+
+        if ($diferenciaEnSegundos > 10) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public function guardarTiempoDeArranque(){
+        $horaDeArranque = $_POST['startTime'];
+        $_SESSION['horaDeArranque'] = $horaDeArranque;
     }
 }
